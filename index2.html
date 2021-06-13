@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bob's Family Restaurant Menu</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 16px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      nav {
+        max-width: 400px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      footer {
+        max-width: 768px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      nav li {
+        padding: 0;
+        margin-bottom:.25rem;
+        display: block;
+      }
+
+
+      nav a {
+        display: block;
+        padding: .5rem;
+        text-align: center;
+        font-size: 1.1em;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h1 {
+        margin-bottom: 0;
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      section a {
+        display: block;
+        text-align: center;
+        max-width: 100px;
+        margin: 0 auto 2rem auto;
+      }
+      address {
+        text-align: center;
+      }
+
+      header a {
+        display: block;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem.25rem;
+        min-height: 32px;
+      }
+
+      li:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+
+      nav li:nth-child(odd) {
+          background-color: #fff;
+      }
+      li span {
+        font-size: 1.1em;
+        align-self: flex-start;
+      }
+
+      li span span {
+        display: block;
+        font-size: 0.65em;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      nav a {
+          border-bottom: 1px solid #ccc;
+      }
+
+      #appetizers h2 {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Bob’s Family Restaurant Menu</h1>
+      <address>
+        13230 U.S. Hwy. 601 South<br />
+        Midland, North Carolina
+      </address>
+      <a href="tel:7048883898">704-888-3898</a>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#appetizers">Appetizers</a></li>
+          <li><a href="#salads">Salads</a></li>
+          <li><a href="#side">Side Orders</a></li>
+          <li><a href="#children">Children's Menu</a></li>
+          <li><a href="#senior">Senior Citizen's 65+ Menu</a></li>
+          <li><a href="#beverages">Beverages</a></li>
+          <li><a href="#sandwiches">Sandwiches w/ Fries</a></li>
+          <li><a href="#subs">Subs w/ Fries</a></li>
+          <li><a href="#italian">Italian Dishes</a></li>
+          <li><a href="#pizza">Pizza</a></li>
+          <li><a href="#dinner">Dinner Plates </a></li>
+          <li><a href="#seafood">Seafood Plates</a></li>
+          <li><a href="#angus">Certified Black Angus Choice</a></li>
+        </ul>
+      </nav>
+      
+      <section id="appetizers">
+        <h2>Appetizers</h2>
+        <ul>
+          <li><span>Homemade Onion Rings </span><span>$4.99</span></li>
+          <li><span>Chili Cheese Fries </span><span>$3.99</span></li>
+          <li>
+            <span>Cheese Sticks <span>Serving of 6</span></span
+            ><span>$5.99</span>
+          </li>
+          <li><span>Fried Pickles </span><span>$3.50</span></li>
+          <li>
+            <span>Jalapeno Poppers <span>Serving of 6</span></span
+            ><span>$5.99</span>
+          </li>
+          <li>
+            <span>Wings <span>Serving of 6</span></span
+            ><span>$6.99</span>
+          </li>
+          <li>
+            <span>Wings <span>Serving of 12</span></span
+            ><span>$9.99</span>
+          </li>
+          <li>
+            <span>Chicken Tenders <span>Serving of 4</span></span
+            ><span>$4.95</span>
+          </li>
+        </ul>
+      </section>
+      <section id="salads">
+        <h2>Salads</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li>
+            <span>Chef Salad <span>Ham or Turkey, Bacon and Cheese</span></span
+            ><span>$6.59</span>
+          </li>
+          <li>
+            <span
+              >Grilled Chicken Salad
+              <span>Grilled Chicken, Tomatoes, Onions and Cheese</span></span
+            ><span>$7.49</span>
+          </li>
+          <li>
+            <span
+              >Chicken Salad Cold Plate
+              <span>Lettuce, Tomatoes, Slaw, Potato Salad, Pickles</span></span
+            ><span>$7.25</span>
+          </li>
+          <li>
+            <span
+              >Tuna Salad Cold Plate
+              <span>Lettuce, Tomatoes, Slaw, Potato Salad, Pickles</span></span
+            ><span>$7.25</span>
+          </li>
+          <li>
+            <span
+              >Greek Salad
+              <span
+                >Feta Cheese, Olives, Peppers, Tomatoes and Onions</span
+              ></span
+            ><span>$6.79</span>
+          </li>
+          <li>
+            <span>Side Salad <span>Tomatoes, Onions and Cheese</span></span
+            ><span>$2.99</span>
+          </li>
+          <li>
+            <span>Add Chicken <span>Add Chicken to a Salad Order</span></span
+            ><span>$2.00</span>
+          </li>
+          <li>
+            <span
+              >Add Gyro Meat <span>Add Gyro Meat to a Salad Order</span></span
+            ><span>$2.00</span>
+          </li>
+        </ul>
+      </section>
+      <section id="side">
+        <h2>Side Orders</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li><span>French Fries</span><span>$1.99</span></li>
+          <li><span>Hushpuppies</span><span>$1.99</span></li>
+          <li>
+            <span>Baked Potato <span>*Item Only Available After 4pm</span></span
+            ><span>$2.29</span>
+          </li>
+          <li>
+            <span
+              >Loaded Baked Potato<span
+                >Bacon and Cheese *Item only Available After 4pm</span
+              ></span
+            ><span>$3.59</span>
+          </li>
+          <li><span>Side Vegetable</span><span>$1.59</span></li>
+          <li><span>Banana Pudding</span><span>$1.99</span></li>
+          <li><span>Sub Onions Rings</span><span>$0.99</span></li>
+          <li><span>Garlic Bread</span><span>$1.00</span></li>
+          <li><span>Extra Dressing</span><span>$1.00</span></li>
+          <li><span>Extra Tartar Sauce</span><span>$1.00</span></li>
+          <li><span>Extra Cocktail Sauce</span><span>$1.00</span></li>
+        </ul>
+      </section>
+      <section id="children">
+        <h2>Children's Menu</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li><span>Cheeseburger with Fries</span><span>$3.99</span></li>
+          <li><span>Chicken Tenders with Fries</span><span>$4.99</span></li>
+          <li><span>Popcorn Shrimp with Fries</span><span>$4.99</span></li>
+          <li><span>Spaghetti with Meat Sauce</span><span>$4.99</span></li>
+          <li><span>Cheese Pita Pizza</span><span>$4.99</span></li>
+        </ul>
+      </section>
+      <section id="senior">
+        <h2>Senior Citizen's 65+ Menu</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li><span>Flounder with French Fries</span><span>$6.49</span></li>
+          <li><span>Whitefish with French Fries</span><span>$6.49</span></li>
+          <li>
+            <span>Popcorn Shrimp with French Fries</span><span>$6.49</span>
+          </li>
+          <li>
+            <span>Fish Sandwich with French Fries</span><span>$4.95</span>
+          </li>
+        </ul>
+      </section>
+      <section id="beverages">
+        <h2>Beverages</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li><span>Tea or Coffee</span><span>$1.59</span></li>
+          <li><span>Soft Drinks</span><span>$1.69</span></li>
+        </ul>
+      </section>
+      <section id="sandwiches">
+        <h2>Sandwiches w/ Fries</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li><span>Hot Dog</span><span>$3.95</span></li>
+          <li><span>2 Hot Dogs</span><span>$6.95</span></li>
+          <li><span>Grilled Cheese</span><span>$3.50</span></li>
+          <li>
+            <span>Hamburger* <span>4oz</span></span
+            ><span>$4.75</span>
+          </li>
+          <li>
+            <span>Cheeseburger* <span>4oz</span></span
+            ><span>$4.95</span>
+          </li>
+          <li>
+            <span>Jumbo Hamburger* <span>8oz</span></span
+            ><span>$5.75</span>
+          </li>
+          <li>
+            <span>Jumbo Cheeseburger* <span>8oz</span></span
+            ><span>$5.95</span>
+          </li>
+          <li>
+            <span>Sliced Turkey <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$5.25</span>
+          </li>
+          <li>
+            <span>Baked Ham <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$5.25</span>
+          </li>
+          <li><span>Grilled Ham and Cheese</span><span>$5.50</span></li>
+          <li>
+            <span>BLT <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$5.50</span>
+          </li>
+          <li>
+            <span>Fish Sandwich <span>Slaw and Tartar Sauce</span></span
+            ><span>$5.95</span>
+          </li>
+          <li>
+            <span>Chuckwagon <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$5.95</span>
+          </li>
+          <li>
+            <span>Chicken Filet <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$5.99</span>
+          </li>
+          <li>
+            <span>Grilled Chicken <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$5.99</span>
+          </li>
+          <li>
+            <span>Buffalo Chicken <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$5.99</span>
+          </li>
+          <li>
+            <span>Club Sandwich <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$7.49</span>
+          </li>
+          <li>
+            <span
+              >Cheeseburger Pita Single
+              <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$6.95</span>
+          </li>
+          <li>
+            <span
+              >Cheeseburger Pita Double
+              <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$7.95</span>
+          </li>
+          <li>
+            <span>Souvlaki Pita <span>Tzatziki</span></span
+            ><span>$7.95</span>
+          </li>
+          <li>
+            <span>Baby Club <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$6.49</span>
+          </li>
+          <li>
+            <span>Fish Pita <span>Cole Slaw</span></span
+            ><span>$6.95</span>
+          </li>
+          <li>
+            <span>Chicken Salad Pita <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$6.95</span>
+          </li>
+          <li>
+            <span>Tuna Salad Pita <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$6.95</span>
+          </li>
+          <li>
+            <span>Chicken Pita <span>Lettuce, Tomato and Mayo</span></span
+            ><span>$6.95</span>
+          </li>
+          <li>
+            <span>Add Bacon <span>Add Bacon to Sandwich Order</span></span
+            ><span>$1.00</span>
+          </li>
+          <li>
+            <span>Add Cheese <span>Add Cheese to Sandwich Order</span></span
+            ><span>$0.50</span>
+          </li>
+        </ul>
+      </section>
+      <section id="subs">
+        <h2>Subs w/ Fries</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li>
+            <span>
+              Gyro <span> Lettuce, Tomato, Onion and Tzatziki Sauce</span></span
+            ><span> $7.49</span>
+          </li>
+          <li>
+            <span>
+              Chicken Gyro Pita
+              <span>Lettuce, Tomato, Onion and Tzatziki Sauce </span></span
+            ><span> $7.49</span>
+          </li>
+          <li>
+            <span>
+              Philly Cheese Steak
+              <span> Provolone Cheese, Onions and Mayo</span> </span
+            ><span> $7.25</span>
+          </li>
+          <li>
+            <span>
+              Chicken Philly
+              <span> Provolone Cheese, Onions and Mayo</span></span
+            ><span> $7.25</span>
+          </li>
+          <li>
+            <span>
+              Ham Sub <span> Hot or Cold, Lettuce, Tomato and Mayo</span></span
+            >
+            <span> $6.50</span>
+          </li>
+          <li>
+            <span>
+              Turkey Sub
+              <span> Hot or Cold, Lettuce, Tomato and Mayo</span></span
+            ><span> $6.50</span>
+          </li>
+          <li>
+            <span>
+              Ribeye Steak Sub* <span> Lettuce, Tomato and Mayo</span></span
+            >
+            <span> $8.99</span>
+          </li>
+          <li><span> Chicken Parm Sub </span><span>$7.45</span></li>
+          <li>
+            <span>
+              Stixx Sub
+              <span> Philly, Ham, Lettuce, Tomato, Onion and Mayo</span></span
+            ><span> $8.25</span>
+          </li>
+        </ul>
+      </section>
+      <section id="italian">
+        <h2>Italian Dishes w/ Salad & Garlic Bread</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li><span>Spaghetti with Meat Sauce</span><span>$7.59</span></li>
+          <li><span>Spaghetti with Meatballs</span><span>$8.79</span></li>
+          <li><span>Baked Spaghetti</span><span>$8.29</span></li>
+          <li>
+            <span>Veal Cutlet Parmigiana over Spaghetti</span><span>$8.79</span>
+          </li>
+          <li>
+            <span>Chicken Parmigiana over Spaghetti</span><span>$8.79</span>
+          </li>
+        </ul>
+      </section>
+      <section id="pizza">
+        <h2>Pizza</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li><span> Cheese Pizza</span> <span> $11.29</span></li>
+          <li>
+            <span>
+              Bob’s Deluxe Pizza
+              <span
+                >Pepperoni, Sausage, Ground Beef, Onions, Peppers, and
+                Mushrooms</span
+              >
+            </span>
+
+            <span> $16.99</span>
+          </li>
+          <li>
+            <span>
+              Meat Lovers
+              <span>Bacon, Ground Beef, Sausage, Ham and Pepperoni</span>
+            </span>
+
+            <span> $17.99</span>
+          </li>
+          <li>
+            <span>
+              1 Topping Pizza
+              <span
+                >Choose 1: Bacon, Ground Beef Sausage, Ham, Pepperoni, Mushroom,
+                Green Peppers, Onions, Black Olives, Tomatoes</span
+              >
+            </span>
+
+            <span> $12.29</span>
+          </li>
+          <li>
+            <span>
+              2 Topping Pizza
+              <span
+                >Choose 2: Bacon, Ground Beef Sausage, Ham, Pepperoni, Mushroom,
+                Green Peppers, Onions, Black Olives, Tomatoes</span
+              >
+            </span>
+
+            <span> $13.29</span>
+          </li>
+          <li>
+            <span>
+              3 Topping Pizza
+              <span
+                >Choose 3: Bacon, Ground Beef Sausage, Ham, Pepperoni, Mushroom,
+                Green Peppers, Onions, Black Olives, Tomatoes</span
+              >
+            </span>
+
+            <span> $14.29</span>
+          </li>
+          <li>
+            <span>
+              4 Topping Pizza
+              <span
+                >Choose 4: Bacon, Ground Beef Sausage, Ham, Pepperoni, Mushroom,
+                Green Peppers, Onions, Black Olives, Tomatoes</span
+              >
+            </span>
+
+            <span> $15.29</span>
+          </li>
+        </ul>
+      </section>
+      <section id="dinner">
+        <h2>Dinner Plates w/ Two Sides & Dinner Roll</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li>
+            <span
+              >Grilled Chicken Tips
+              <span>Over Rice with Onions and Peppers</span></span
+            >
+            <span>$7.99</span>
+          </li>
+          <li>
+            <span
+              >Tenderloin Tips
+              <span>Over Rice with Onion and Peppers</span></span
+            >
+            <span>$7.99</span>
+          </li>
+          <li>
+            <span
+              >Combo Tips
+              <span
+                >Chicken and Steak Over Rice with Onions and Peppers</span
+              ></span
+            >
+            <span>$9.99</span>
+          </li>
+          <li>
+            <span
+              >Chicken or Steak Stir Fry
+              <span>Over Rice with 2 Sides</span></span
+            >
+            <span>$8.99</span>
+          </li>
+          <li>
+            <span>Grilled Chicken Breast</span>
+            <span>$7.89</span>
+          </li>
+          <li>
+            <span>Grilled Chicken Breast</span>
+            <span>$7.89</span>
+          </li>
+          <li>
+            <span>Grilled Cajun Chicken Breast</span>
+            <span>$7.99</span>
+          </li>
+          <li>
+            <span>Hamburger Steak* <span>9oz Onions and Gravy</span></span>
+            <span>$8.29</span>
+          </li>
+          <li>
+            <span>Chicken Tenders</span>
+            <span>$7.69</span>
+          </li>
+          <li>
+            <span>Veal Cutlet with Meat Sauce</span>
+            <span>$7.49</span>
+          </li>
+          <li>
+            <span>Virginia Ham Steak</span>
+            <span>$7.29</span>
+          </li>
+          <li>
+            <span>2 Pork Chops <span>Grilled or Fried</span></span>
+            <span>$8.59</span>
+          </li>
+          <li>
+            <span
+              >Country Fried Steak
+              <span>Over Mashed Potatoes and Gravy</span></span
+            >
+            <span>$7.59</span>
+          </li>
+          <li>
+            <span>Vegetable Plate <span>Choice of 3 Veggies</span></span>
+            <span>$4.49</span>
+          </li>
+          <li>
+            <span
+              >Gyro Plate
+              <span>Greek Salad, French Fries and Tzatziki Sauce</span></span
+            >
+            <span>$8.45</span>
+          </li>
+          <li>
+            <span>Beef Strips</span>
+            <span>$9.29</span>
+          </li>
+        </ul>
+      </section>
+      <section id="seafood">
+        <h2>Seafood Plates w/ Two Sides and Hushpuppies</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li>
+            <span> Fried Filet of Flounder Small</span>
+            <span> $8.59</span>
+          </li>
+          <li>
+            <span> Fried Filet of Flounder Large</span>
+            <span> $9.89</span>
+          </li>
+          <li>
+            <span> Fried Alaskan Whitefish Small</span>
+            <span> $7.69</span>
+          </li>
+          <li>
+            <span> Fried Alaskan Whitefish Large</span>
+            <span> $8.59</span>
+          </li>
+          <li>
+            <span> Fried Filet of Catfish Small</span>
+            <span> $8.59</span>
+          </li>
+          <li>
+            <span> Fried Filet of Catfish Large</span>
+            <span> $9.79</span>
+          </li>
+          <li>
+            <span> Fried Filet of Trout Small</span>
+            <span> $8.59</span>
+          </li>
+          <li>
+            <span> Fried Filet of Trout Large</span>
+            <span> $9.79</span>
+          </li>
+          <li>
+            <span> Fried Popcorn Shrimp Small</span>
+            <span> $7.79</span>
+          </li>
+          <li>
+            <span> Fried Popcorn Shrimp Large</span>
+            <span> $8.99</span>
+          </li>
+          <li>
+            <span> Fried Jumbo Shrimp <span> Serving of 6</span></span>
+            <span> $8.69</span>
+          </li>
+          <li>
+            <span> Fried Jumbo Shrimp <span> Serving of 12</span></span>
+            <span> $9.89</span>
+          </li>
+          <li>
+            <span> Stuffed Deviled Crab Small</span>
+            <span> $9.89</span>
+          </li>
+          <li>
+            <span> Stuffed Deviled Crab Large</span>
+            <span> $15.49</span>
+          </li>
+          <li>
+            <span>
+              Combination - Choice of 2
+              <span> Jumbo Shrimp add 1.00</span></span
+            >
+            <span> $12.49</span>
+          </li>
+          <li>
+            <span>
+              Seafood Platter
+              <span>
+                Flounder, Popcorn Shrimp, 3 Jumbo and Deviled Crab</span
+              ></span
+            >
+            <span> $14.99</span>
+          </li>
+          <li>
+            <span> Hot or Cold Popcorn Shrimp</span>
+            <span> $9.99</span>
+          </li>
+          <li>
+            <span> *Add Grilled or Boiled Seafood</span>
+            <span> $1.00</span>
+          </li>
+        </ul>
+      </section>
+      <section id="angus">
+        <h2>Certified Black Angus Choice w/ Two Sides</h2>
+        <a href="#top">Back to Top</a>
+        <ul>
+          <li>
+            <span> Bob’s Special* 10oz Ribeye Steak</span>
+            <span> $13.99</span>
+          </li>
+          <li>
+            <span> Extra Cut* 12 oz Ribeye Steak</span>
+            <span> $15.99</span>
+          </li>
+          <li>
+            <span>
+              Surf and Turf*
+              <span> 8oz Ribeye Steak and 6 Jumbo Shrimp</span></span
+            >
+            <span> $15.99</span>
+          </li>
+          <li>
+            <span> 8oz Ribeye Steak* with 2 Sides</span>
+            <span> $10.99</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+        <p>Food Advisory: *May be cooked to order. Consuming raw or undercooked meats, poultry seafood shellfish, or raw eggs may increase your risk of food borne illness especially if you have certain medical conditions </p>
+    </footer>
+  </body>
+</html>

@@ -5,131 +5,233 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bob's Family Restaurant Menu</title>
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Times New Roman", Times, serif;
-        font-size: 16px;
-      }
-
-      ul {
-        margin: 0;
-        padding: 0;
-      }
-      section {
-        max-width: 768px;
-        margin: 0 auto;
-        padding: 0 1rem;
-      }
-
-      nav {
-        max-width: 400px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-      }
-      footer {
-        max-width: 768px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-      }
-      nav li {
-        padding: 0;
-        margin-bottom:.25rem;
-        display: block;
-      }
-
-
-      nav a {
-        display: block;
-        padding: .5rem;
-        text-align: center;
-        font-size: 1.1em;
-      }
-      h1,
-      h2 {
-        text-align: center;
-      }
-      h1 {
-        margin-bottom: 0;
-      }
-
-      h2 {
-        margin-bottom: 0;
-      }
-
-      section a {
-        display: block;
-        text-align: center;
-        max-width: 100px;
-        margin: 0 auto 2rem auto;
-      }
-      address {
-        text-align: center;
-      }
-
-      header a {
-        display: block;
-        text-align: center;
-      }
-      ul {
-        list-style: none;
-      }
-
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem.25rem;
-        min-height: 32px;
-      }
-
-      li:nth-child(odd) {
-        background-color: #f2f2f2;
-      }
-
-      nav li:nth-child(odd) {
-          background-color: #fff;
-      }
-      li span {
-        font-size: 1.1em;
-        align-self: flex-start;
-      }
-
-      li span span {
-        display: block;
-        font-size: 0.65em;
-      }
-      a {
-        color: #000;
-        text-decoration: none;
-      }
-
-      a:hover {
-          text-decoration: underline;
-      }
-
-      nav a {
-          border-bottom: 1px solid #ccc;
-      }
-
-      #appetizers h2 {
-        margin-bottom: 2rem;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header id="top">
-      <h1>Bob’s Family Restaurant Menu</h1>
-      <address>
-        13230 U.S. Hwy. 601 South<br />
-        Midland, North Carolina
-      </address>
-      <a href="tel:7048883898">704-888-3898</a>
+    <header id="global-header">
+      <nav class="upper-nav">
+        <a href="#hero" class="skip-cta">skip to main content</a>
+        <div class="flex-container">
+          <ul class="nav-header">
+            <li><a href="#" class="logo-cta">Bob's Family Restaurant</a></li>
+            <li>
+              <button
+                class="menu-btn"
+                aria-haspopup="true"
+                aria-controls="upper-list"
+              >
+                menu
+              </button>
+            </li>
+          </ul>
+          <ul
+            id="upper-list"
+            aria-expanded="false"
+            class="nav-list toggle-list"
+            hidden
+          >
+            <li>
+              <a href="#appetizers" class="menu-item scroll-cta">Appetizers</a>
+            </li>
+            <li><a href="#salads" class="menu-item scroll-cta">Salads</a></li>
+            <li>
+              <a href="#side" class="menu-item scroll-cta">Side Orders</a>
+            </li>
+            <li>
+              <a href="#children" class="menu-item scroll-cta"
+                >Children's Menu</a
+              >
+            </li>
+            <li>
+              <a href="#senior" class="menu-item scroll-cta"
+                >Senior Citizen's 65+ Menu</a
+              >
+            </li>
+            <li>
+              <a href="#beverages" class="menu-item scroll-cta">Beverages</a>
+            </li>
+            <li>
+              <a href="#sandwiches" class="menu-item scroll-cta">Sandwiches</a>
+            </li>
+            <li>
+              <a href="#subs" class="menu-item scroll-cta">Subs</a>
+            </li>
+            <li>
+              <a href="#italian" class="menu-item scroll-cta">Italian Dishes</a>
+            </li>
+            <li><a href="#pizza" class="menu-item scroll-cta">Pizza</a></li>
+            <li>
+              <a href="#dinner" class="menu-item scroll-cta">Dinner Plates </a>
+            </li>
+            <li>
+              <a href="#seafood" class="menu-item scroll-cta">Seafood Plates</a>
+            </li>
+            <li>
+              <a href="#angus" class="menu-item scroll-cta"
+                >Certified Black Angus Choice</a
+              >
+            </li>
+            <li><button class="close-btn">X close menu</button></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="lower-nav">
+        <ul
+          id="lower-list-1"
+          class="options-list toggle-list"
+          aria-expanded="false"
+          hidden
+        >
+          <li>
+            Choose a mode:
+            <ul class="mode-list">
+              <li>
+                <input type="radio" name="mode" id="mode-default" />
+                <label for="mode-default">default</label>
+              </li>
+              <li>
+                <input type="radio" name="mode" id="dark" />
+                <label for="dark">dark mode</label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Choose a font size:
+            <ul class="font-list">
+              <li>
+                <input type="radio" name="font" id="font-default" />
+                <label for="font-defualt">default</label>
+              </li>
+              <li>
+                <input type="radio" name="font" id="font-large" />
+                <label for="font-large">18</label>
+              </li>
+              <li>
+                <input type="radio" name="font" id="font-xl" />
+                <label for="font-xl">20</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav-header">
+          <li class="options">
+            <button
+              class="menu-btn"
+              aria-haspopup="true"
+              aria-controls="lower-list-1"
+            >
+              <img
+                src="./asset/options-icon.svg"
+                alt="viewing options"
+                class="default-icon"
+              />
+              <img
+                src="./asset/options-icon-dark.svg"
+                alt="viewing options"
+                class="dark-icon"
+                hidden
+              />
+              options
+            </button>
+          </li>
+          <li class="desktop-hidden">
+            <button
+              class="menu-btn"
+              aria-haspopup="true"
+              aria-controls="upper-list"
+            >
+              <img
+                src="./asset/menu-icon.svg"
+                alt="viewing options"
+                class="default-icon"
+              />
+              <img
+                src="./asset/menu-icon-dark.svg"
+                alt="viewing options"
+                class="dark-icon"
+                hidden
+              />
+              menu
+            </button>
+          </li>
+          <li class="desktop-hidden">
+            <a href="#contact" class="scroll-cta"
+              ><img
+                src="./asset/phone-icon.svg"
+                alt="24x24 placehoder"
+                class="default-icon"
+              />
+              <img
+                src="./asset/phone-icon-dark.svg"
+                alt="24x24 placehoder"
+                class="dark-icon"
+                hidden
+              />
+              contact</a
+            >
+          </li>
+          <li class="top">
+            <a href="#menu-section" class="next-link scroll-cta"
+              ><img
+                src="./asset/scroll-icon.svg"
+                alt="24x24 placehoder"
+                class="default-icon"
+              />
+              <img
+                src="./asset/scroll-icon-dark.svg"
+                alt="24x24 placehoder"
+                class="dark-icon"
+                hidden
+              />
+              scroll</a
+            >
+            <a href="#top" class="top-link" hidden
+              ><img
+                src="./asset/home-icon.svg"
+                alt="24x24 placehoder"
+                class="default-icon"
+              />
+              <img
+                src="./asset/home-icon-dark.svg"
+                alt="24x24 placehoder"
+                class="dark-icon"
+                hidden
+              />
+              top</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section id="hero" class="hero-section" tabindex="-1">
+        <div class="content-container">
+          <h1>home style cooking along with the very finest in seafood.</h1>
+          <address>
+            13230 U.S. Hwy. 601 South
+            Midland, North Carolina
+          </address>
+          <ul>
+            <li>
+              <a
+                href="https://g.page/bobsfamilymidland?share"
+                target="_blank"
+                rel="noopener noreferrer"
+                >view on google maps</a
+              >
+            </li>
+            <li><a href="tel:7048883898">call: 704-888-3898</a></li>
+            <li><a href="#menu-section">view menu</a></li>
+          </ul>
+        </div>
+      </section>
     </header>
-    <main>
-      <nav>
+    <main id="main-content">
+      <section id="menu-section" tabindex="-1">
+        <h2>Menu</h2>
         <ul>
           <li><a href="#appetizers">Appetizers</a></li>
           <li><a href="#salads">Salads</a></li>
@@ -137,19 +239,18 @@
           <li><a href="#children">Children's Menu</a></li>
           <li><a href="#senior">Senior Citizen's 65+ Menu</a></li>
           <li><a href="#beverages">Beverages</a></li>
-          <li><a href="#sandwiches">Sandwiches w/ Fries</a></li>
-          <li><a href="#subs">Subs w/ Fries</a></li>
+          <li><a href="#sandwiches">Sandwiches</a></li>
+          <li><a href="#subs">Subs</a></li>
           <li><a href="#italian">Italian Dishes</a></li>
           <li><a href="#pizza">Pizza</a></li>
           <li><a href="#dinner">Dinner Plates </a></li>
           <li><a href="#seafood">Seafood Plates</a></li>
           <li><a href="#angus">Certified Black Angus Choice</a></li>
         </ul>
-      </nav>
-      
-      <section id="appetizers">
+      </section>
+      <section id="appetizers" tabindex="0">
         <h2>Appetizers</h2>
-        <ul>
+        <ul class="menu-list">
           <li><span>Homemade Onion Rings </span><span>$4.99</span></li>
           <li><span>Chili Cheese Fries </span><span>$3.99</span></li>
           <li>
@@ -175,10 +276,9 @@
           </li>
         </ul>
       </section>
-      <section id="salads">
+      <section id="salads" tabindex="0">
         <h2>Salads</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li>
             <span>Chef Salad <span>Ham or Turkey, Bacon and Cheese</span></span
             ><span>$6.59</span>
@@ -224,10 +324,9 @@
           </li>
         </ul>
       </section>
-      <section id="side">
+      <section id="side" tabindex="0">
         <h2>Side Orders</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li><span>French Fries</span><span>$1.99</span></li>
           <li><span>Hushpuppies</span><span>$1.99</span></li>
           <li>
@@ -250,10 +349,9 @@
           <li><span>Extra Cocktail Sauce</span><span>$1.00</span></li>
         </ul>
       </section>
-      <section id="children">
+      <section id="children" tabindex="0">
         <h2>Children's Menu</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li><span>Cheeseburger with Fries</span><span>$3.99</span></li>
           <li><span>Chicken Tenders with Fries</span><span>$4.99</span></li>
           <li><span>Popcorn Shrimp with Fries</span><span>$4.99</span></li>
@@ -261,10 +359,9 @@
           <li><span>Cheese Pita Pizza</span><span>$4.99</span></li>
         </ul>
       </section>
-      <section id="senior">
+      <section id="senior" tabindex="0">
         <h2>Senior Citizen's 65+ Menu</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li><span>Flounder with French Fries</span><span>$6.49</span></li>
           <li><span>Whitefish with French Fries</span><span>$6.49</span></li>
           <li>
@@ -275,18 +372,16 @@
           </li>
         </ul>
       </section>
-      <section id="beverages">
+      <section id="beverages" tabindex="0">
         <h2>Beverages</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li><span>Tea or Coffee</span><span>$1.59</span></li>
           <li><span>Soft Drinks</span><span>$1.69</span></li>
         </ul>
       </section>
-      <section id="sandwiches">
+      <section id="sandwiches" tabindex="0">
         <h2>Sandwiches w/ Fries</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li><span>Hot Dog</span><span>$3.95</span></li>
           <li><span>2 Hot Dogs</span><span>$6.95</span></li>
           <li><span>Grilled Cheese</span><span>$3.50</span></li>
@@ -389,10 +484,9 @@
           </li>
         </ul>
       </section>
-      <section id="subs">
+      <section id="subs" tabindex="0">
         <h2>Subs w/ Fries</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li>
             <span>
               Gyro <span> Lettuce, Tomato, Onion and Tzatziki Sauce</span></span
@@ -443,10 +537,9 @@
           </li>
         </ul>
       </section>
-      <section id="italian">
+      <section id="italian" tabindex="0">
         <h2>Italian Dishes w/ Salad & Garlic Bread</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li><span>Spaghetti with Meat Sauce</span><span>$7.59</span></li>
           <li><span>Spaghetti with Meatballs</span><span>$8.79</span></li>
           <li><span>Baked Spaghetti</span><span>$8.29</span></li>
@@ -458,10 +551,9 @@
           </li>
         </ul>
       </section>
-      <section id="pizza">
+      <section id="pizza" tabindex="0">
         <h2>Pizza</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li><span> Cheese Pizza</span> <span> $11.29</span></li>
           <li>
             <span>
@@ -528,10 +620,9 @@
           </li>
         </ul>
       </section>
-      <section id="dinner">
+      <section id="dinner" tabindex="0">
         <h2>Dinner Plates w/ Two Sides & Dinner Roll</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li>
             <span
               >Grilled Chicken Tips
@@ -618,10 +709,9 @@
           </li>
         </ul>
       </section>
-      <section id="seafood">
+      <section id="seafood" tabindex="0">
         <h2>Seafood Plates w/ Two Sides and Hushpuppies</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li>
             <span> Fried Filet of Flounder Small</span>
             <span> $8.59</span>
@@ -704,10 +794,9 @@
           </li>
         </ul>
       </section>
-      <section id="angus">
+      <section id="angus" tabindex="0">
         <h2>Certified Black Angus Choice w/ Two Sides</h2>
-        <a href="#top">Back to Top</a>
-        <ul>
+        <ul class="menu-list">
           <li>
             <span> Bob’s Special* 10oz Ribeye Steak</span>
             <span> $13.99</span>
@@ -729,9 +818,23 @@
           </li>
         </ul>
       </section>
+      <section id="contact">
+        <header>
+          <h3>Bob’s Family Restaurant</h3>
+          <p class="call">Give us a Call</p>
+      <a href="tel:7048883898">704-888-3898</a>
+          <p class="stop-by">or Stop by for a Visit</p>
+          <address>
+            13230 U.S. Hwy. 601 South<br />
+            Midland, North Carolina
+          </address>
+        </header>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.8439290516044!2d-80.50864768475336!3d35.23525498030063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885415ac94f0fed7%3A0x9201c5e5c674dd3c!2sBob&#39;s%20Family%20Restaurant!5e0!3m2!1sen!2sus!4v1623541427164!5m2!1sen!2sus" width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
     </main>
     <footer>
-        <p>Food Advisory: *May be cooked to order. Consuming raw or undercooked meats, poultry seafood shellfish, or raw eggs may increase your risk of food borne illness especially if you have certain medical conditions </p>
-    </footer>
+      <p>Food Advisory: *May be cooked to order. Consuming raw or undercooked meats, poultry seafood shellfish, or raw eggs may increase your risk of food borne illness especially if you have certain medical conditions </p>
+  </footer>
+    <script src="app.js"></script>
   </body>
 </html>
