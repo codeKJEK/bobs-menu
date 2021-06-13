@@ -409,8 +409,8 @@ main section {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .toggle-list {
@@ -509,8 +509,9 @@ section h2 {
   display: block;
 }
 
-.close-btn {
-  padding: 1rem;
+#upper-list .close-btn {
+  padding: .5rem;
+  margin-bottom: 2.5rem;
 }
 
 #contact {
