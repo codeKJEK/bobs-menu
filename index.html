@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bob's Family Restaurant Menu</title>
+</head>
+<body>
+    <header class="app-header">
+        <ul class="info-list">
+            <li><a href="#" data-category="header" data-action="header-click-name">Bob's Family Restaurant</a></li>
+            <li><a href="#contact" data-category="header" data-action="header-click-mobile-contact"><img src="uploads/location-icon.svg" alt="contact">contact</a></li>
+        </ul>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#company-info" data-category="header" data-action="header-click-info"><img src="uploads/info-icon.svg" alt="info"> info</a></li>
+                <li><button class="menu-btn" data-category="header" data-action="header-click-menu"><img src="uploads/menu-icon.svg" alt="menu">menu</a></li>
+                <li><button class="filter-btn" data-category="header" data-action="header-click-filter"><img src="uploads/filter-icon.svg" alt="filter">filter</a></li>
+                <li class="call-cta"><a href="tel:+7048883898" data-category="header" data-action="header-click-call"><img src="uploads/call-icon.svg" alt="call">call</a></li>
+                <li class="contact-cta"><a href="#contact" data-category="header" data-action="header-click-desktop-contact"><img src="uploads/location-icon.svg" alt="contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <article class="content-container">
+            <section id="company-info" class="hero">
+                <h1>home style cooking</h1>
+                <p>along with the very finest in seafood</p>
+                <ul>
+                    <li><address>13230 U.S. Hwy. 601 South Midland, North Carolina 28107</address></li>
+                    <li>Mon - Thurs 11AM-8:30PM</li>
+                    <li>Fri - Sat 11AM-9AM</li>
+                    <li>Closed on Sunday</li>
+                    <li><a href="tel:+7048883898" data-action="hero" data-action="hero-click-call"><img src="uploads/call-icon-dark.svg" alt="call"/>704-888-3898</a></li>
+                    <li><a href="#main-menu" data-action="hero" data-action="hero-click-menu"><img src="uploads/menu-icon-dark.svg" alt="menu"/>View Menu</a></li>
+                </ul>
+            </section>
+            <section id="main-menu" data-action="view-main-menu" class="menu-section">
+                <header>
+                    <h2>menu</h2>
+                </header>
+                <ul>
+                    <li id="appetizer-cta" class="menu-item"><a href="#appetizer" data-category="appetizer" data-action="menu1-click-appetizer">Appetizers</a></li>
+                    <li id="salad-cta" class="menu-item"><a href="#salad" data-category="salad" data-action="menu1-click-salad">Salads</a></li>
+                    <li id="side-cta" class="menu-item"><a href="#side" data-category="side" data-action="menu1-click-side">Side Orders</a></li>
+                    <li id="children-cta" class="menu-item"><a href="#children" data-category="children" data-action="menu1-click-children">Children's Menu</a></li>
+                    <li id="senior-cta" class="menu-item"><a href="#senior" data-category="senior" data-action="menu1-click-senior">Senior Citizen's 65+</a></li>
+                    <li id="beverage-cta" class="menu-item"><a href="#beverage" data-category="beverage" data-action="menu1-click-beverage">Beverages</a></li>
+                    <li id="sandwich-cta" class="menu-item"><a href="#sandwich" data-category="sandwich" data-action="menu1-click-sandwich">Sandwiches</a></li>
+                    <li id="sub-cta" class="menu-item"><a href="#sub" data-category="sub" data-action="menu1-click-sub">Subs</a></li>
+                    <li id="italian-cta" class="menu-item"><a href="#italian" data-category="italian" data-action="menu1-click-italian">Italian Dishes</a></li>
+                    <li id="pizza-cta" class="menu-item"><a href="#pizza" data-category="pizza" data-action="menu1-click-pizza">Pizza</a></li>
+                    <li id="dinner-cta" class="menu-item"><a href="#dinner" data-category="dinner" data-action="menu1-click-dinner">Dinner Plates</a></li>
+                    <li id="seafood-cta" class="menu-item"><a href="#seafood" data-category="seafood" data-action="menu1-click-seafood">Seafood Plates</a></li>
+                    <li id="angus-cta" class="menu-item"><a href="#angus" data-category="angus" data-action="menu1-click-angus">Black Angus</a></li>
+                    <li><button data-category="menu" data-action="click filter" class="filter-btn" data-category="main-menu" data-action="mainMenu-click-filter"><img src="uploads/filter-icon-dark.svg" alt="filter"/>Filter Menu</button></li>
+                    
+                </ul>
+            </section>
+            <section id="appetizer" data-action="view-appetizer" class="menu-section">
+                <header class="section-header">
+                    <h2>Appetizers</h2>
+                </header>
+            </section>
+            <section id="salad" data-action="view-salad" class="menu-section">
+                <header class="section-header">
+                    <h2>Salads</h2>
+                </header>
+            </section>         
+            <section id="side" data-action="view-side" class="menu-section">
+                <header class="section-header">
+                    <h2>Side orders</h2>
+                </header>
+            </section>
+            <section id="children" data-action="view-children" class="menu-section">
+                <header class="section-header">
+                    <h2>Children's Menu</h2>
+                </header>
+            </section>
+            <section id="senior" data-action="view-senior" class="menu-section">
+                <header class="section-header">
+                    <h2>Senior Citizen's 65+ Menu</h2>
+                </header>
+            </section>
+            <section id="beverage" data-action="view-beverage" class="menu-section">
+                <header class="section-header">
+                    <h2>Beverages</h2>
+                </header>
+            </section>
+            <section id="sandwich" data-action="view-sandwich" class="menu-section">
+                <header class="section-header">
+                    <h2>Sandwiches</h2>
+                    <p>with Fries</p>
+                    
+                </header>
+            </section>
+            <section id="sub" data-action="view-sub" class="menu-section">
+                <header class="section-header">
+                    <h2>Subs </h2>
+                    <p>with Fries</p>
+
+                </header>
+            </section>
+            <section id="italian" data-action="view-italian" class="menu-section">
+                <header class="section-header">
+                    <h2>Italian Dishes</h2>
+                    <p>with Salad & Garlic Bread</p>
+
+                </header>
+            </section>
+            <section id="pizza" data-action="view-pizza" class="menu-section">
+                <header class="section-header">
+                    <h2>Pizza</h2>
+
+                </header>
+            </section>
+            <section id="dinner" data-action="view-dinner" class="menu-section">
+                <header class="section-header">
+                    <h2>Dinner Plates </h2>
+                    <p>with Two Sides & Dinner Roll</p>
+
+                </header>
+            </section>
+            <section id="seafood" data-action="view-seafood" class="menu-section">
+                <header class="section-header">
+                    <h2>Seafood Plates</h2>
+                    <p>with Two Sides and Hushpuppies</p>
+
+                </header>
+            </section>
+            <section id="angus" data-action="view-angus" class="menu-section">
+                <header class="section-header">
+                    <h2>Certified Black Angus Choice </h2>
+                    <p>with Two Sides</p>
+                </header>
+            </section>
+            <section id="contact" data-action="view-contact" class="menu-section">
+                <header>
+                  <h2>Bob’s Family Restaurant</h2>
+                  <p class="call">Give us a Call</p>
+                  <a href="tel:7048883898" class="call-trigger">704-888-3898</a>
+                  <p class="stop-by">Stop by for a Visit</p>
+                  <address>
+                    13230 U.S. Hwy. 601 South<br />
+                    Midland, North Carolina
+                  </address>
+                </header>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.8439290516044!2d-80.50864768475336!3d35.23525498030063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885415ac94f0fed7%3A0x9201c5e5c674dd3c!2sBob&#39;s%20Family%20Restaurant!5e0!3m2!1sen!2sus!4v1623541427164!5m2!1sen!2sus"
+                  width="100%"
+                  height="50%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </section>
+        </article>
+        <aside id="app-aside" aria-hidden="true">
+            <div class="list-container">
+                <div>
+                    <ul id="inline-menu" hidden>
+                        <li id="appetizer-sideCta" class="side-item"><a href="#appetizer" data-category="side-menu" data-action="menu2-click-appetizers">Appetizers</a></li>
+                        <li id="salad-sideCta" class="side-item"><a href="#salad" data-category="side-menu" data-action="menu2-click-salads">Salads</a></li>
+                        <li id="side-sideCta" class="side-item"><a href="#side" data-category="side-menu" data-action="menu2-click-side">Side Orders</a></li>
+                        <li id="children-sideCta" class="side-item"><a href="#children" data-category="side-menu" data-action="menu2-click-children">Children's Menu</a></li>
+                        <li id="senior-sideCta" class="side-item"><a href="#senior" data-category="side-menu" data-action="menu2-click-senior">Senior Citizen's 65+</a></li>
+                        <li id="beverage-sideCta" class="side-item"><a href="#beverage" data-category="side-menu" data-action="menu2-click-beverages">Beverages</a></li>
+                        <li id="sandwich-sideCta" class="side-item"><a href="#sandwich" data-category="side-menu" data-action="menu2-click-sandwiches">Sandwiches</a></li>
+                        <li id="sub-sideCta" class="side-item"><a href="#sub" data-category="side-menu" data-action="menu2-click-subs">Subs</a></li>
+                        <li id="italian-sideCta" class="side-item"><a href="#italian" data-category="side-menu" data-action="menu2-click-italian">Italian Dishes</a></li>
+                        <li id="pizza-sideCta" class="side-item"><a href="#pizza" data-category="side-menu" data-action="menu2-click-pizza">Pizza</a></li>
+                        <li id="dinner-sideCta" class="side-item"><a href="#dinner" data-category="side-menu" data-action="menu2-click-dinner">Dinner Plates</a></li>
+                        <li id="seafood-sideCta" class="side-item"><a href="#seafood" data-category="side-menu" data-action="menu2-click-seafood">Seafood Plates</a></li>
+                        <li id="angus-sideCta" class="side-item"><a href="#angus" data-category="side-menu" data-action="menu2-click-angus">Black Angus</a></li>
+                    </ul>
+                    <ul id="filter-menu" hidden>
+                        <li><input type="checkbox" name="appetizer" aria-controls="appetizer" id="appetizer-checkbox" data-category="side-menu" data-action="filter-appetizer"><label for="appetizer-checkbox">Appetizers</label></li>
+                        <li><input type="checkbox" name="salad" aria-controls="salad" id="salad-checkbox" data-category="side-menu" data-action="filter-salads"><label for="salad-checkbox">Salads</label></li>
+                        <li><input type="checkbox" name="side" aria-controls="side" id="side-checkbox" data-category="side-menu" data-action="filter-side"><label for="side-checkbox">Side Orders</label></li>
+                        <li><input type="checkbox" name="children" aria-controls="children" id="children-checkbox" data-category="side-menu" data-action="filter-children"><label for="children-checkbox">Children's Menu</label></li>
+                        <li><input type="checkbox" name="senior" aria-controls="senior" id="senior-checkbox" data-category="side-menu" data-action="filter-senior"><label for="senior-checkbox">Senior Citizen's 65+</label></li>
+                        <li><input type="checkbox" name="beverage" aria-controls="beverage" id="beverage-checkbox" data-category="side-menu" data-action="filter-beverages"><label for="beverage-checkbox">Beverages</label></li>
+                        <li><input type="checkbox" name="sandwich" aria-controls="sandwich" id="sandwich-checkbox" data-category="side-menu" data-action="filter-sandwiches"><label for="sandwich-checkbox">Sandwiches</label></li>
+                        <li><input type="checkbox" name="sub" aria-controls="sub" id="sub-checkbox" data-category="side-menu" data-action="filter-subs"><label for="sub-checkbox">Subs</label></li>
+                        <li><input type="checkbox" name="italian" aria-controls="italian" id="italian-checkbox" data-category="side-menu" data-action="filter-italian"><label for="italian-checkbox">Italian Dishes</label></li>
+                        <li><input type="checkbox" name="pizza" aria-controls="pizza" id="pizza-checkbox" data-category="side-menu" data-action="filter-pizza"><label for="pizza-checkbox">Pizza</label></li>
+                        <li><input type="checkbox" name="dinner" aria-controls="dinner" id="dinner-checkbox" data-category="side-menu" data-action="filter-dinner"><label for="dinner-checkbox">Dinner Plates</label></li>
+                        <li><input type="checkbox" name="seafood" aria-controls="seafood" id="seafood-checkbox" data-category="side-menu" data-action="filter-seafood"><label for="seafood-checkbox">Seafood Plates</label></li>
+                        <li><input type="checkbox" name="angus" aria-controls="angus" id="angus-checkbox" data-category="side-menu" data-action="filter-angus"><label for="angus-checkbox">Black Angus</label></li>
+                        
+                    </ul>
+                    <ul class="option">
+                        <li><button id="menu-option" data-category="side-menu" data-action="menu2-click-menu"><img src="uploads/menu-icon.svg" alt="menu">menu</button></li>
+                        <li><button id="filter-option" data-category="side-menu" data-action="menu2-click-filter"><img src="uploads/filter-icon.svg" alt="filter">filter </button></li>
+                        <li><button class="clear-filter" data-category="side-menu" data-action="menu2-click-clear"><span>-</span>clear filter</button></li>
+                        <li><button class="close-btn" data-category="side-menu" data-action="menu2-click-close"><span>X</span>close menu</button></li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+        
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
