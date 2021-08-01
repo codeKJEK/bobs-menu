@@ -297,7 +297,7 @@ ul {
 }
 
 #filter-menu, #inline-menu {
-    padding: 0 2rem .9rem .9rem;
+    padding: 0 2rem 0 .9rem;
 }
 
 #filter-menu li, #inline-menu li {
@@ -330,7 +330,7 @@ ul {
 }
 .option {
     padding: 0 .45rem;
-    margin-bottom: 3.25rem
+    margin-bottom: 4.25rem
 }
 
 .option button {
