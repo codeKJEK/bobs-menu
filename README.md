@@ -1,2 +1,3 @@
-# bobs-menu
-Bob's Family Restaurant Menu
+# Strapi application
+
+A quick description of your strapi application

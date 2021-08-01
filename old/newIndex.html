@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavPro</title>
+    <link rel="stylesheet" href="newStyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="app-header">
+      <div class="container">
+        <div class="company-info">
+          <a
+            href="#main-content"
+            id="skip-cta"
+            data-category="header skip"
+            data-action="click"
+            >skip to main content</a
+          >
+          <div class="visible-info">
+            <a
+              href="#"
+              id="app-logo"
+              data-category="header logo"
+              data-action="click"
+              >Bob's Family Restaurant</a
+            >
+            <a
+              href="tel:+7041234567"
+              class="call-cta"
+              data-category="header call"
+              data-action="click"
+            >
+              <img src="/asset/svg/call-icon.svg" alt="call" />
+              <div>call</div>
+            </a>
+          </div>
+        </div>
+        <nav id="app-nav">
+          <ul class="cta-list">
+            <li>
+              <a href="#info">
+                <figure>
+                  <img src="/asset/svg/info-icon.svg" alt="info" />
+                </figure>
+                info
+              </a>
+            </li>
+            <li>
+              <a href="#main-menu">
+                <figure>
+                  <img src="/asset/svg/menu-icon.svg" alt="menu" />
+                </figure>
+                menu
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <figure>
+                  <img src="/asset/svg/contact-icon.svg" alt="contact" />
+                </figure>
+                contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section id="info" class="hero-section" tabindex="0">
+        <header>
+          <h1>home style cooking along with the very finest in seafood.</h1>
+        </header>
+        <ul class="info-list">
+          <li>mon - thur - 9am to 5pm</li>
+          <li>fri - sat - 9am to 7pm</li>
+          <li class="add-margin">sunday closed</li>
+          <li class="add-margin">
+            <address>
+              <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                >12345 street name st, <br />midland, nc 21807</a
+              >
+            </address>
+          </li>
+          <li>
+            <a href="tel:+7041234567">call: 704-123-4567</a>
+          </li>
+        </ul>
+      </section>
+      <section id="main-menu" tabindex="-1" data-category="menu" data-action="view" data-label="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#appetizers" data-category="menu" data-action="navigate" data-label="appetizers">Appetizers</a></li>
+          <li><a href="#salads" data-category="menu" data-action="navigate" data-label="salads">Salads</a></li>
+          <li><a href="#side" data-category="menu" data-action="navigate" data-label="side">Side Orders</a></li>
+          <li><a href="#children" data-category="menu" data-action="navigate" data-label="children">Children's Menu</a></li>
+          <li><a href="#senior" data-category="menu" data-action="navigate" data-label="senior">Senior Citizen's 65+ Menu</a></li>
+          <li><a href="#beverages" data-category="menu" data-action="navigate" data-label="beverages">Beverages</a></li>
+          <li><a href="#sandwiches" data-category="menu" data-action="navigate" data-label="sandwiches">Sandwiches</a></li>
+          <li><a href="#subs" data-category="menu" data-action="navigate" data-label="subs">Subs</a></li>
+          <li><a href="#italian" data-category="menu" data-action="navigate" data-label="italian">Italian Dishes</a></li>
+          <li><a href="#pizza" data-category="menu" data-action="navigate" data-label="pizza">Pizza</a></li>
+          <li><a href="#dinner" data-category="menu" data-action="navigate" data-label="dinner">Dinner Plates </a></li>
+          <li><a href="#seafood" data-category="menu" data-action="navigate" data-label="seafood">Seafood Plates</a></li>
+          <li><a href="#angus" data-category="menu" data-action="navigate" data-label="angus">Certified Black Angus Choice</a></li>
+        </ul>
+      </section>
+      <section id="appetizers" class="menu-section">
+          <h3>Appetizers</h3>
+        <!-- Start Item -->
+        <article>
+            <header>
+              <h6>Homemade Onion Rings</h6>
+              <h6>$4.99</h6>
+            </header>
+            
+          </article>
+          <!-- End Item -->
+        <!-- Start Item -->
+        <article>
+            <header>
+              <h6>Chili Cheese Fries</h6>
+              <h6>$3.99</h6>
+            </header>
+            
+          </article>
+          <!-- End Item -->
+        <!-- Start Item -->
+        <article>
+            <header>
+              <h6>Cheese Sticks</h6>
+              <h6>$5.99</h6>
+            </header>
+            <p>Serving of 6</p>
+          </article>
+          <!-- End Item -->
+        <!-- Start Item -->
+        <article>
+            <header>
+              <h6>Fried Pickles</h6>
+              <h6>$3.50</h6>
+            </header>
+            
+          </article>
+          <!-- End Item -->
+        <!-- Start Item -->
+        <article>
+            <header>
+              <h6>Jalapeno Poppers</h6>
+              <h6>$5.99</h6>
+            </header>
+            <p>Serving of 6</p>
+          </article>
+          <!-- End Item -->
+        <!-- Start Item -->
+        <article>
+            <header>
+              <h6>Wings</h6>
+              <h6>$6.99</h6>
+            </header>
+            <p>Serving of 6</p>
+          </article>
+          <!-- End Item -->
+        <!-- Start Item -->
+        <article>
+            <header>
+              <h6>Wings</h6>
+              <h6>$9.99</h6>
+            </header>
+            <p>Serving of 12</p>
+          </article>
+          <!-- End Item -->
+        <!-- Start Item -->
+        <article>
+            <header>
+              <h6>Chicken Tenders</h6>
+              <h6>$4.95</h6>
+            </header>
+            <p>Serving of 4</p>
+          </article>
+          <!-- End Item -->
+      </section>
+      <section id="salads" class="menu-section">
+          <h3>Salads</h3>
+          <!-- Start item -->
+          <article>
+              <header>
+                  <h6>Chef Salad </h6>
+                  <h6>$6.59</h6>
+              </header>
+              <p>Ham or Turkey, Bacon and Cheese</p>
+          </article>
+          <!-- End item -->
+          <!-- Start item -->
+          <article>
+              <header>
+                  <h6>Grilled Chicken Salad</h6>
+                  <h6>$7.49</h6>
+              </header>
+              <p>Grilled Chicken, Tomatoes, Onions and Cheese</p>
+          </article>
+          <!-- End item -->
+          <!-- Start item -->
+          <article>
+              <header>
+                  <h6>Chicken Salad Cold Plate</h6>
+                  <h6>$7.25</h6>
+              </header>
+              <p>Lettuce, Tomatoes, Slaw, Potato Salad, Pickles</p>
+          </article>
+          <!-- End item -->
+          <!-- Start item -->
+          <article>
+              <header>
+                  <h6>Tuna Salad Cold Plate</h6>
+                  <h6>$7.25</h6>
+              </header>
+              <p>Lettuce, Tomatoes, Slaw, Potato Salad, Pickles</p>
+          </article>
+          <!-- End item -->
+          <!-- Start item -->
+          <article>
+              <header>
+                  <h6>Greek Salad</h6>
+                  <h6>$6.79</h6>
+              </header>
+              <p>Feta Cheese, Olives, Peppers, Tomatoes and Onions</p>
+          </article>
+          <!-- End item -->
+          <!-- Start item -->
+          <article>
+              <header>
+                  <h6>Side Salad </h6>
+                  <h6>$2.99</h6>
+              </header>
+              <p>Tomatoes, Onions and Cheese</p>
+          </article>
+          <!-- End item -->
+          <!-- Start item -->
+          <article>
+              <header>
+                  <h6>Add Chicken </h6>
+                  <h6>$2.00</h6>
+              </header>
+              <p>Add Chicken to a Salad Order</p>
+          </article>
+          <!-- End item -->
+          <!-- Start item -->
+          <article>
+              <header>
+                  <h6>Add Gyro Meat </h6>
+                  <h6>$2.00</h6>
+              </header>
+              <p> Add Gyro Meat to a Salad Order</p>
+          </article>
+          <!-- End item -->
+          
+      </section>
+      <section id="side" class="menu-section">
+          <h3>Side Orders</h3>
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>French Fries</h6>
+                <h6>$1.99</h6>
+            </header>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>Hushpuppies</h6>
+                <h6>$1.99</h6>
+            </header>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>Baked Potato </h6>
+                <h6>$2.29</h6>
+            </header>
+            <p>*Item Only Available After 4pm</p>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>Loaded Baked Potato</h6>
+                <h6>$3.59</h6>
+            </header>
+            <p>Bacon and Cheese *Item only Available After 4pm</p>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>Side Vegetable</h6>
+                <h6>$1.59</h6>
+            </header>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>Banana Pudding</h6>
+                <h6>$1.99</h6>
+            </header>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>Sub Onions Rings</h6>
+                <h6>$0.99</h6>
+            </header>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>Garlic Bread</h6>
+                <h6>$1.00</h6>
+            </header>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>Extra Dressing</h6>
+                <h6>$1.00</h6>
+            </header>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6>Extra Tartar Sauce</h6>
+                <h6>$1.00</h6>
+            </header>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6> Extra Cocktail Sauce</h6>
+                <h6>$1.00</h6>
+            </header>
+        </article>
+        <!-- End item -->
+          <!-- Start item -->
+          <article>
+            <header>
+                <h6></h6>
+                <h6></h6>
+            </header>
+        </article>
+        <!-- End item -->
+      </section>
+      <section id="contact" tabindex="0">
+        <div class="content-container">
+          <h3>contact</h3>
+          <div class="flex-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208648.72570407548!2d-80.97991363845165!3d35.20307278347697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0x884650e6bf43d164!2sCharlotte%2C%20NC!5e0!3m2!1sen!2sus!4v1624913004347!5m2!1sen!2sus"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+            <form>
+              <p>*Do Not fill out this form it does not go anywhere</p>
+              <ul>
+                <li>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+              </ul>
+              <button type="submit">submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

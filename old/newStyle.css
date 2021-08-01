@@ -1,0 +1,500 @@
+/* ============= */
+/* global styles */
+/* ============= */
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Lora", serif;
+  }
+  
+  main {
+    display: block;
+  }
+  
+  h1 {
+    font-size: 1.476em;
+    margin: 2rem 0;
+  }
+  
+  a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+  }
+ 
+  img {
+    border-style: none;
+  }
+
+  button {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+    overflow: visible;
+    text-transform: none;
+  }
+
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+ 
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: .063rem dotted ButtonText;
+  }
+
+  [hidden] {
+    display: none;
+  }
+
+/* ============= */
+/* Modular Scale */
+/* ============= */
+
+h1 {
+    font-size: 1.383em;
+}
+h2 {
+    font-size: 1.296em;
+}
+h3 {
+    font-size: 1.215em;
+}
+h4 {
+    font-size: 1.138em;
+}
+h5 {
+    font-size: 1.067em;
+}
+h6 {
+    font-size: 1em;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* ================================== */
+/* END global styles START app header */
+/* ================================== */
+
+#app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+#skip-cta {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+}
+
+#skip-cta:focus {
+    height: unset;
+    padding: .5rem 0;
+}
+
+#app-header .visible-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+#app-header .visible-info a {
+    padding: 1rem;
+    color: #404040;
+    text-transform: capitalize;
+}
+
+#app-header .visible-info .call-cta {
+    display: flex;
+    padding: .5rem;
+    margin: .5rem 1rem .5rem 0;
+    background-color: #808080;
+    color: #f2f2f2;
+    border-radius: .25rem;
+}
+
+#app-header .call-cta img {
+    width: 13px;
+    margin-right: 4px;
+}
+
+#app-header a:hover, #app-header a:active {
+    background-color: #fff;
+    outline: .063rem solid #808080;
+    color: #000;
+    font-weight: bold;        
+}
+
+#app-header a:focus {
+    background-color: #fff;
+    font-weight: bold; 
+    color: #000;
+}
+
+#app-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e6e6e6;
+    color: #404040;
+}
+
+#app-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+#app-nav figure {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+#app-nav figure img {
+    width: 20px;
+    height: 20px;
+}
+
+#app-nav a {
+    display: block;
+    padding: 8px 0 12px;
+    min-width: 86px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    line-height: 12px;
+    text-transform: capitalize;
+}
+
+/* ================================= */
+/* END app header START hero section */
+/* ================================= */
+
+
+#main-menu {
+    padding: 50px 1rem;
+    text-align: center;
+}
+#main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+#main-menu a {
+    padding: .75rem;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-section {
+    padding: 50px 1rem;
+}
+
+.menu-section article header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section h3 {
+    text-align: center;
+}
+
+.menu-section p {
+    margin: 0;
+    font-size: .9em
+}
+
+.menu-section article {
+    padding: 1rem;
+    min-height: 40px;
+}
+
+
+.menu-section article:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+.menu-section header {
+    margin-bottom: .25rem;
+}
+
+
+main {
+    background-color: #f2f2f2;
+}
+
+figure {
+    margin: 0;
+}
+
+.info-list {
+    text-transform: uppercase;
+}
+
+.add-margin {
+    margin-bottom: 1rem;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 1rem 0 1rem;
+    letter-spacing: 1px;
+}
+
+.hero-section header {
+    align-self: center;
+}
+
+.hero-section address {
+    text-transform: uppercase;
+}
+
+.hero-section h1 {
+    margin: 2rem 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.hero-section header a {
+    display: block;
+    padding: .5rem;
+    max-width: 365px;
+    margin: 0 auto;
+}
+
+.hero-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-section .cta-list li {
+    margin: 0 auto 1rem auto;
+    max-width: 365px;
+}
+
+.hero-section li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 55px;
+    border: 1px solid #808080;
+}
+
+.hero-section li a:hover {
+    border: .063rem solid #404040;
+}
+
+#services, #contact {
+    padding: 50px 1rem 0 1rem;
+}
+
+#services ol {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#services ol li {
+    padding: .5rem;
+    margin: .25rem 0;
+}
+
+#services ol li::after {
+    content: ">";
+    margin-left: 1rem;
+}
+
+#services ol li:last-child::after {
+    content: " ";
+    margin-left: 0px;
+}
+
+
+article img {
+    width: 100%;
+}
+
+article a {
+    padding: .5rem 1rem;
+    border: .063rem solid #ccc;
+    margin: .5rem .5rem 0 0;
+    display: block;
+    text-align: center;
+}
+
+article button {
+    border: .063rem solid #ccc;
+    width: 100%;
+    padding: .5rem 0;
+}
+
+.service-desc[aria-expanded="false"] {
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.service-desc[aria-expanded="true"] {
+    height: unset;
+}
+
+
+iframe {
+    width: 100%;
+}
+
+form {
+    text-align: center;
+    margin: 2rem auto;
+}
+form ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+form input {
+    margin-bottom: 1rem;
+}
+
+form input, form textarea {
+    min-width: 275px;
+    width: calc(100% - 2rem);
+}
+
+
+
+@media (min-width: 769px) {
+    #app-header .container {
+        padding: .25rem 1rem;
+    }
+    #app-nav {
+        position: unset;
+        width: unset;
+    }
+    
+    #app-nav figure {
+        display: none;
+    }
+
+    #app-nav a {
+        padding: 1rem;
+        font-size: 1em;
+    }
+    
+    #app-nav ul {
+        justify-content: flex-end;
+    }
+    
+    #app-header .visible-info .call-cta {
+        display: none;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    #services, #contact {
+        height: 100vh;
+    }
+
+    #services article {
+        padding-top: 2rem;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main-nav ul {
+        justify-content: flex-end;
+    }
+
+    .hero-section ul {
+        min-width: 400px;
+    }
+
+
+
+    .flex-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .flex-container article {
+        padding: 1rem;
+    }
+
+    #contact .flex-container {
+        justify-content: space-evenly;
+    }
+
+    form {
+        width: 100%;
+    }
+}

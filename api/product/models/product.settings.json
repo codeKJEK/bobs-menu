@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "appetizer",
+        "salad",
+        "side",
+        "children",
+        "senior",
+        "beverage",
+        "sandwich",
+        "sub",
+        "italian",
+        "pizza",
+        "dinner",
+        "seafood",
+        "angus"
+      ]
+    },
+    "categories": {
+      "via": "products",
+      "collection": "category"
+    }
+  }
+}
