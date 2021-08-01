@@ -1,4 +1,4 @@
-fetch("http://localhost:1337/products?_sort=name:asc")
+fetch("https://bobs-family-midland-menu.herokuapp.com/products?_sort=name:asc")
 .then(res => {
     if (res.ok) {
         return res.json();
