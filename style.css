@@ -226,7 +226,7 @@ ul {
     margin-top: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .menu-section li a {
