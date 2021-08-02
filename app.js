@@ -1,4 +1,9 @@
-fetch("https://bobs-family-midland-menu.herokuapp.com/products?_sort=name:asc")
+
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+    fetch("https://bobs-family-midland-menu.herokuapp.com/products?_sort=name:asc")
 .then(res => {
     if (res.ok) {
         return res.json();
@@ -66,10 +71,6 @@ fetch("https://bobs-family-midland-menu.herokuapp.com/products?_sort=name:asc")
         menuOption.classList.add("active");
     }))
 })
-
-
-
-window.addEventListener("load", () => {
     const asideMenu = document.getElementById("app-aside"),
     inlineMenu = document.getElementById("inline-menu"),
     inlineCtas = inlineMenu.querySelectorAll("a"),
