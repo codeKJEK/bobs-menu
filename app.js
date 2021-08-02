@@ -10,9 +10,8 @@ window.addEventListener("DOMContentLoaded", () => {
     filterOption = document.getElementById("filter-option"),
     menuSections = document.querySelectorAll(".menu-section"),
     menuItems = document.querySelectorAll(".menu-item"),
-    sideItems = document.querySelectorAll(".side-item"),
-    filterBtns = document.querySelectorAll(".filter-btn"),
-    menuBtns = document.querySelectorAll(".menu-btn");
+    sideItems = document.querySelectorAll(".side-item");
+    
     fetch("https://bobs-family-midland-menu.herokuapp.com/products?_sort=name:asc")
     .then(res => {
         if (res.ok) {
@@ -59,7 +58,8 @@ window.addEventListener("DOMContentLoaded", () => {
             categoryHTML += inlineNav;
             document.getElementById(category).insertAdjacentHTML('beforeend', categoryHTML);
         })
-        
+        const filterBtns = document.querySelectorAll(".filter-btn"),
+        menuBtns = document.querySelectorAll(".menu-btn");
         filterBtns.forEach(btn => btn.addEventListener("click", () => {
             asideMenu.setAttribute("aria-hidden", "false");
             inlineMenu.hidden = true;
