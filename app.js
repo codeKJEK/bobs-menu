@@ -1,74 +1,3 @@
-// fetch("https://bobs-family-midland-menu.herokuapp.com/products?_sort=name:asc")
-// .then(res => {
-//     if (res.ok) {
-//         return res.json();
-//     } else {
-//         console.log("ERROR: Network Error or No Product Found")
-//     }
-// })
-// .then(data => {
-//     console.log(data);
-//     let allCategories = [];
-//     data.forEach(product => {
-//         if(!allCategories.includes(product.category)) {
-//             allCategories.push(product.category);
-//         }
-//     });
-//     allCategories.forEach(category => {
-//         let singleCategory = data.filter(product => product.category == category);
-//         let categoryHTML = singleCategory.map(item => {
-//             let desc = ``
-//             if (item.description == null) {
-//                 desc = ``
-//             } else {
-//                 desc = `<p>${item.description}</p>`
-//             }
-//             return `
-//             <article>
-//                 <header class="article-header">
-//                     <h3>${item.name}</h3>
-//                     <h3>${(Math.round(item.price * 100) / 100).toFixed(2)}</h3>
-//                 </header>
-//                 ${desc}
-//             </article>`
-//         });
-//         categoryHTML = categoryHTML.join("");
-//         let inlineNav = `
-//         <ul>
-//         <li><button data-category="${category}" data-action="${category}-click-filter" class="filter-btn"><figure><img src="uploads/filter-icon-dark.svg" alt="filter"></figure>filter</button></li>
-//         <li><button data-category="${category}" data-action="${category}-click-menu" class="menu-btn"><figure><img src="uploads/menu-icon-dark.svg" alt="menu"></figure>menu</button></li>
-//         <li class="call-cta"><a href="tel:+7048883898" data-category="${category}" data-action="${category}-click-call"><figure><img src="uploads/call-icon-dark.svg" alt="call"></figure>call</a></li>
-//         </ul>
-//         `
-//         categoryHTML += inlineNav;
-//         document.getElementById(category).insertAdjacentHTML('beforeend', categoryHTML);
-//     })
-//     const filterBtns = document.querySelectorAll(".filter-btn"),
-//     menuBtns = document.querySelectorAll(".menu-btn"),
-//     asideMenu = document.getElementById("app-aside"),
-//     inlineMenu = document.getElementById("inline-menu"),
-//     menuOption = document.getElementById("menu-option"),
-//     filterOption = document.getElementById("filter-option"),
-//     filterMenu = document.getElementById("filter-menu");
-//     filterBtns.forEach(btn => btn.addEventListener("click", () => {
-//         asideMenu.setAttribute("aria-hidden", "false");
-//         inlineMenu.hidden = true;
-//         filterMenu.hidden = false;
-//         menuOption.classList.remove("active");
-//         filterOption.classList.add("active");
-        
-//     }))
-//     menuBtns.forEach(btn => btn.addEventListener("click", () => {
-//         asideMenu.setAttribute("aria-hidden", "false");
-//         filterMenu.hidden = true;
-//         inlineMenu.hidden = false;
-//         filterOption.classList.remove("active");
-//         menuOption.classList.add("active");
-//     }))
-// })
-
-
-
 window.addEventListener("DOMContentLoaded", () => {
     const asideMenu = document.getElementById("app-aside"),
     inlineMenu = document.getElementById("inline-menu"),
@@ -85,68 +14,67 @@ window.addEventListener("DOMContentLoaded", () => {
     filterBtns = document.querySelectorAll(".filter-btn"),
     menuBtns = document.querySelectorAll(".menu-btn");
     fetch("https://bobs-family-midland-menu.herokuapp.com/products?_sort=name:asc")
-.then(res => {
-    if (res.ok) {
-        return res.json();
-    } else {
-        console.log("ERROR: Network Error or No Product Found")
-    }
-})
-.then(data => {
-    console.log(data);
-    let allCategories = [];
-    data.forEach(product => {
-        if(!allCategories.includes(product.category)) {
-            allCategories.push(product.category);
+    .then(res => {
+        if (res.ok) {
+            return res.json();
+        } else {
+            console.log("ERROR: Network Error or No Product Found")
         }
-    });
-    allCategories.forEach(category => {
-        let singleCategory = data.filter(product => product.category == category);
-        let categoryHTML = singleCategory.map(item => {
-            let desc = ``
-            if (item.description == null) {
-                desc = ``
-            } else {
-                desc = `<p>${item.description}</p>`
-            }
-            return `
-            <article>
-                <header class="article-header">
-                    <h3>${item.name}</h3>
-                    <h3>${(Math.round(item.price * 100) / 100).toFixed(2)}</h3>
-                </header>
-                ${desc}
-            </article>`
-        });
-        categoryHTML = categoryHTML.join("");
-        let inlineNav = `
-        <ul>
-        <li><button data-category="${category}" data-action="${category}-click-filter" class="filter-btn"><figure><img src="uploads/filter-icon-dark.svg" alt="filter"></figure>filter</button></li>
-        <li><button data-category="${category}" data-action="${category}-click-menu" class="menu-btn"><figure><img src="uploads/menu-icon-dark.svg" alt="menu"></figure>menu</button></li>
-        <li class="call-cta"><a href="tel:+7048883898" data-category="${category}" data-action="${category}-click-call"><figure><img src="uploads/call-icon-dark.svg" alt="call"></figure>call</a></li>
-        </ul>
-        `
-        categoryHTML += inlineNav;
-        document.getElementById(category).insertAdjacentHTML('beforeend', categoryHTML);
     })
-    
-    filterBtns.forEach(btn => btn.addEventListener("click", () => {
-        asideMenu.setAttribute("aria-hidden", "false");
-        inlineMenu.hidden = true;
-        filterMenu.hidden = false;
-        menuOption.classList.remove("active");
-        filterOption.classList.add("active");
+    .then(data => {
+        console.log(data);
+        let allCategories = [];
+        data.forEach(product => {
+            if(!allCategories.includes(product.category)) {
+                allCategories.push(product.category);
+            }
+        });
+        allCategories.forEach(category => {
+            let singleCategory = data.filter(product => product.category == category);
+            let categoryHTML = singleCategory.map(item => {
+                let desc = ``
+                if (item.description == null) {
+                    desc = ``
+                } else {
+                    desc = `<p>${item.description}</p>`
+                }
+                return `
+                <article>
+                    <header class="article-header">
+                        <h3>${item.name}</h3>
+                        <h3>${(Math.round(item.price * 100) / 100).toFixed(2)}</h3>
+                    </header>
+                    ${desc}
+                </article>`
+            });
+            categoryHTML = categoryHTML.join("");
+            // let inlineNav = `
+            // <ul>
+            // <li><button data-category="${category}" data-action="${category}-click-filter" class="filter-btn"><figure><img src="uploads/filter-icon-dark.svg" alt="filter"></figure>filter</button></li>
+            // <li><button data-category="${category}" data-action="${category}-click-menu" class="menu-btn"><figure><img src="uploads/menu-icon-dark.svg" alt="menu"></figure>menu</button></li>
+            // <li class="call-cta"><a href="tel:+7048883898" data-category="${category}" data-action="${category}-click-call"><figure><img src="uploads/call-icon-dark.svg" alt="call"></figure>call</a></li>
+            // </ul>
+            // `
+            // categoryHTML += inlineNav;
+            document.getElementById(category).querySelector(".section-content").innerHTML = categoryHTML;
+        })
         
-    }))
-    menuBtns.forEach(btn => btn.addEventListener("click", () => {
-        asideMenu.setAttribute("aria-hidden", "false");
-        filterMenu.hidden = true;
-        inlineMenu.hidden = false;
-        filterOption.classList.remove("active");
-        menuOption.classList.add("active");
-    }))
-})
-    
+        filterBtns.forEach(btn => btn.addEventListener("click", () => {
+            asideMenu.setAttribute("aria-hidden", "false");
+            inlineMenu.hidden = true;
+            filterMenu.hidden = false;
+            menuOption.classList.remove("active");
+            filterOption.classList.add("active");
+            
+        }))
+        menuBtns.forEach(btn => btn.addEventListener("click", () => {
+            asideMenu.setAttribute("aria-hidden", "false");
+            filterMenu.hidden = true;
+            inlineMenu.hidden = false;
+            filterOption.classList.remove("active");
+            menuOption.classList.add("active");
+        }))
+    })
     function closeMenu() {
         asideMenu.setAttribute("aria-hidden", "true");
         inlineMenu.hidden = true;
