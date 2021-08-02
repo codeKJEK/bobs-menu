@@ -375,7 +375,7 @@ ul {
         width: 0;
     }
     #app-aside[aria-hidden="false"] {
-        width: 301px;
+        width: 500px;
     }
     .contact-cta { display: block; }
 
