@@ -8,62 +8,6 @@ async function init() {
 }
 
 window.addEventListener("DOMContentLoaded", async () => {
-  // recieve products
-
-    let products = [];
-    try {
-        products = await init();
-    } catch (e) {
-        console.log("ERROR!");
-        console.log(e);
-    }
-
-  // get all the categories
-
-    const categories = [];
-    products.forEach((product) => {
-        if (!categories.includes(product.category)) {
-            categories.push(product.category);
-        }
-    });
-
-  // create and diplay menu category
-
-    categories.forEach((category) => {
-        const singleCategory = products.filter(
-            (product) => product.category === category
-        );
-        let categoryHTML = singleCategory.map((item) => {
-            let desc = ``;
-            if (item.description == null) {
-            desc = ``;
-            } else {
-            desc = `<p>${item.description}</p>`;
-            }
-            return `
-            <article>
-                <header class="article-header">
-                    <h3>${item.name}</h3>
-                    <h3>${(
-                        Math.round(item.price * 100) / 100
-                    ).toFixed(2)}</h3>
-                </header>
-                ${desc}
-            </article>`;
-        });
-        categoryHTML = categoryHTML.join("");
-        let inlineNav = `
-        <ul>
-        <li><button data-category="${category}" data-action="${category}-click-filter" class="filter-btn"><figure data-category="${category}" data-action="${category}-click-filter"><img src="uploads/filter-icon-dark.svg" alt="filter" data-category="${category}" data-action="${category}-click-filter"
-        data-category="${category}" data-action="${category}-click-menu"></figure>filter</button></li>
-        <li><button data-category="${category}" data-action="${category}-click-menu" class="menu-btn"><figure data-category="${category}" data-action="${category}-click-menu"><img src="uploads/menu-icon-dark.svg" alt="menu" data-category="${category}" data-action="${category}-click-menu"></figure>menu</button></li>
-        <li class="call-cta"><a href="tel:+7048883898" data-category="${category}" data-action="${category}-click-call"><figure data-category="${category}" data-action="${category}-click-call"><img src="uploads/call-icon-dark.svg" alt="call" data-category="${category}" data-action="${category}-click-call"></figure>call</a></li>
-        </ul>
-        `
-        categoryHTML += inlineNav;
-        document.getElementById(category).querySelector("section").innerHTML = categoryHTML;
-    });
-
     //filter button click event listener
 
     const filterBtns = document.querySelectorAll(".filter-btn"),
@@ -218,4 +162,60 @@ window.addEventListener("DOMContentLoaded", async () => {
             item.hidden = false;
         })
     })
+    
+    // recieve products
+
+    let products = [];
+    try {
+        products = await init();
+    } catch (e) {
+        console.log("ERROR!");
+        console.log(e);
+    }
+
+  // get all the categories
+
+    const categories = [];
+    products.forEach((product) => {
+        if (!categories.includes(product.category)) {
+            categories.push(product.category);
+        }
+    });
+
+  // create and diplay menu category
+
+    categories.forEach((category) => {
+        const singleCategory = products.filter(
+            (product) => product.category === category
+        );
+        let categoryHTML = singleCategory.map((item) => {
+            let desc = ``;
+            if (item.description == null) {
+            desc = ``;
+            } else {
+            desc = `<p>${item.description}</p>`;
+            }
+            return `
+            <article>
+                <header class="article-header">
+                    <h3>${item.name}</h3>
+                    <h3>${(
+                        Math.round(item.price * 100) / 100
+                    ).toFixed(2)}</h3>
+                </header>
+                ${desc}
+            </article>`;
+        });
+        categoryHTML = categoryHTML.join("");
+        let inlineNav = `
+        <ul>
+        <li><button data-category="${category}" data-action="${category}-click-filter" class="filter-btn"><figure data-category="${category}" data-action="${category}-click-filter"><img src="uploads/filter-icon-dark.svg" alt="filter" data-category="${category}" data-action="${category}-click-filter"
+        data-category="${category}" data-action="${category}-click-menu"></figure>filter</button></li>
+        <li><button data-category="${category}" data-action="${category}-click-menu" class="menu-btn"><figure data-category="${category}" data-action="${category}-click-menu"><img src="uploads/menu-icon-dark.svg" alt="menu" data-category="${category}" data-action="${category}-click-menu"></figure>menu</button></li>
+        <li class="call-cta"><a href="tel:+7048883898" data-category="${category}" data-action="${category}-click-call"><figure data-category="${category}" data-action="${category}-click-call"><img src="uploads/call-icon-dark.svg" alt="call" data-category="${category}" data-action="${category}-click-call"></figure>call</a></li>
+        </ul>
+        `
+        categoryHTML += inlineNav;
+        document.getElementById(category).querySelector("section").innerHTML = categoryHTML;
+    });
 });
