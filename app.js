@@ -212,7 +212,7 @@ window.addEventListener("DOMContentLoaded", async () => {
         <li><button data-category="${category}" data-action="${category}-click-filter" class="filter-btn"><figure data-category="${category}" data-action="${category}-click-filter"><img src="uploads/filter-icon-dark.svg" alt="filter" data-category="${category}" data-action="${category}-click-filter"
         data-category="${category}" data-action="${category}-click-menu"></figure>filter</button></li>
         <li><button data-category="${category}" data-action="${category}-click-menu" class="menu-btn"><figure data-category="${category}" data-action="${category}-click-menu"><img src="uploads/menu-icon-dark.svg" alt="menu" data-category="${category}" data-action="${category}-click-menu"></figure>menu</button></li>
-        <li class="call-cta"><a href="tel:+7048883898" data-category="${category}" data-action="${category}-click-call"><figure data-category="${category}" data-action="${category}-click-call"><img src="uploads/call-icon-dark.svg" alt="call" data-category="${category}" data-action="${category}-click-call"></figure>call</a></li>
+        <li class="call-cta"><a href="tel:7048883898" data-category="${category}" data-action="${category}-click-call"><figure data-category="${category}" data-action="${category}-click-call"><img src="uploads/call-icon-dark.svg" alt="call" data-category="${category}" data-action="${category}-click-call"></figure>call</a></li>
         </ul>
         `
         categoryHTML += inlineNav;
