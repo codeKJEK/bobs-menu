@@ -9,27 +9,28 @@ async function init() {
 
 window.addEventListener("DOMContentLoaded", async () => {
     //filter button click event listener
+    function contentCallback() {
+        const filterBtns = document.querySelectorAll(".filter-btn"),
+        menuBtns = document.querySelectorAll(".menu-btn");
+        filterBtns.forEach(btn => btn.addEventListener("click", () => {
+            asideMenu.setAttribute("aria-hidden", "false");
+            inlineMenu.hidden = true;
+            filterMenu.hidden = false;
+            menuOption.classList.remove("active");
+            filterOption.classList.add("active");
 
-    const filterBtns = document.querySelectorAll(".filter-btn"),
-    menuBtns = document.querySelectorAll(".menu-btn");
-    filterBtns.forEach(btn => btn.addEventListener("click", () => {
-        asideMenu.setAttribute("aria-hidden", "false");
-        inlineMenu.hidden = true;
-        filterMenu.hidden = false;
-        menuOption.classList.remove("active");
-        filterOption.classList.add("active");
+        }))
 
-    }))
+        // menu button click event listener
 
-    // menu button click event listener
-
-    menuBtns.forEach(btn => btn.addEventListener("click", () => {
-        asideMenu.setAttribute("aria-hidden", "false");
-        filterMenu.hidden = true;
-        inlineMenu.hidden = false;
-        filterOption.classList.remove("active");
-        menuOption.classList.add("active");
-    }))
+        menuBtns.forEach(btn => btn.addEventListener("click", () => {
+            asideMenu.setAttribute("aria-hidden", "false");
+            filterMenu.hidden = true;
+            inlineMenu.hidden = false;
+            filterOption.classList.remove("active");
+            menuOption.classList.add("active");
+        }))
+    }
 
     // close menu function
 
@@ -86,6 +87,8 @@ window.addEventListener("DOMContentLoaded", async () => {
         menuOption.classList.remove("active");
         filterOption.classList.add("active");
     })
+
+    
 
     // filter change event listener
 
@@ -183,7 +186,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
 
   // create and diplay menu category
-
+    let catsProcessed = 0
     categories.forEach((category) => {
         const singleCategory = products.filter(
             (product) => product.category === category
@@ -217,5 +220,9 @@ window.addEventListener("DOMContentLoaded", async () => {
         `
         categoryHTML += inlineNav;
         document.getElementById(category).querySelector("section").innerHTML = categoryHTML;
+        catsProcessed++;
+        if(catsProcessed >= categories.length) {
+            contentCallback();
+        }
     });
 });
