@@ -24,6 +24,24 @@
     "description": {
       "type": "string"
     },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "appetizer",
+        "salad",
+        "side",
+        "children",
+        "senior",
+        "beverage",
+        "sandwich",
+        "sub",
+        "italian",
+        "pizza",
+        "dinner",
+        "seafood",
+        "angus"
+      ]
+    },
     "featured": {
       "type": "boolean",
       "required": false
