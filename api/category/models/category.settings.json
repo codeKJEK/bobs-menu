@@ -20,10 +20,13 @@
       "collection": "product",
       "dominant": true
     },
-    "order": {
-      "type": "integer",
-      "required": true,
-      "unique": true
+    "featured": {
+      "type": "boolean",
+      "required": false
+    },
+    "addon": {
+      "type": "boolean",
+      "required": false
     }
   }
 }
