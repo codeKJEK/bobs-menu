@@ -19,14 +19,6 @@
       "via": "categories",
       "collection": "product",
       "dominant": true
-    },
-    "featured": {
-      "type": "boolean",
-      "required": false
-    },
-    "addon": {
-      "type": "boolean",
-      "required": false
     }
   }
 }
