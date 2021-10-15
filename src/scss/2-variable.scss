@@ -1,0 +1,36 @@
+/*! VARIABLES */
+:root {
+    /* ========== COLOR ========== */
+
+    --hue: 0;
+    --saturation: 0%;
+    --color-light: hsl(var(--hue), var(--saturation), 95%);
+    --color-light-85: hsl(var(--hue), var(--saturation), 85%);
+    --color-light-75: hsl(var(--hue), var(--saturation), 75%);
+    --color-mid: hsl(var(--hue), var(--saturation), 50%);
+    --color-dark-25: hsl(var(--hue), var(--saturation), 25%);
+    --color-dark-15: hsl(var(--hue), var(--saturation), 15%);
+    --color-dark: hsl(var(--hue), var(--saturation), 5%);
+
+    /* ========== SPACING ========== */
+    
+    --header-height: 3rem;
+    --before-element: 1rem;
+    --after-element: 1rem;
+    
+    /* ========== SIZE ========== */
+    
+    --font-size-1: 1.476em;
+    --font-size-2 :1.383em;
+    --font-size-3: 1.296em;
+    --font-size-4: 1.215em;
+    --font-size-5: 1.138em;
+    --font-size-6: 1.067em;
+    --font-size-p: 1em;
+    --font-size-small: .9em;
+    --font-size-tiny: 0.75em;
+    --font-size-icon: 1.5em;
+
+    --page-header-height: 4rem;
+
+}

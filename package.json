@@ -1,15 +1,26 @@
 {
-  "name": "menu-test",
+  "name": "bobs-menu",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Bobs Family Restaurant Menu",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "gulp-webp": "^4.0.1",
+    "gulp-webserver": "^0.9.1",
+    "sass": "^1.37.5",
+    "gulp-concat": "^2.6.1"
+  },
   "dependencies": {
     "knex": "0.21.18",
     "pg": "^8.7.1",
@@ -27,7 +38,7 @@
     "strapi-utils": "3.6.5"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Kurtis Kovel"
   },
   "strapi": {
     "uuid": "6dafed49-ebd2-48e2-a95a-780e6d7a1822"

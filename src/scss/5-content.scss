@@ -1,0 +1,214 @@
+/*! CONTENT */
+.content-section{
+    margin: 6rem 1rem;
+}
+
+.hidden-label {display: none;}
+
+.section-header {
+    margin-bottom: 2rem;
+    text-align: center;
+    h3, h4, h5, h6 {
+        padding: 1rem;
+        border-bottom: 1px solid var(--color-light-75);
+        text-transform: capitalize;
+    }
+}
+
+.shadow-box {
+    padding: 2rem 0 3rem 0;
+    box-shadow: 0 8px 12px hsl(var(--hue), var(--saturation), 15%, 0.15);
+    border: 1px solid var(--color-mid);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.page-hero {
+    text-align: center;
+    margin: 2rem 1rem;
+    header {
+        padding: 2rem 0;
+        margin-top: 1rem;
+        box-shadow: 0 8px 12px hsl(var(--hue), var(--saturation), 15%, 0.15);
+    }
+    header, a {
+        border: 1px solid var(--color-mid);
+        border-radius: .5rem;
+    }
+    h2{
+        margin: 0;
+        margin-bottom: .5rem;
+        letter-spacing: 1px;
+    }
+    .heading-subtitle {
+        font-size: var(--font-size-small);
+        margin: 0;
+    }
+    h2, .heading-subtitle {
+        text-transform: capitalize;
+    }
+    li {
+        margin: 1rem 0;
+    }
+    a {
+        padding: 1rem 0;
+        display: block;
+        max-width: 288px;
+        margin: 0 auto;
+    }
+    .business-hours {
+        margin: 2rem 0;
+        span {
+            display: block;
+            margin: 1rem 0;
+        }
+    }
+}
+
+
+
+.menu-section {
+    li{
+        border-radius: .5rem;
+        &:nth-child(odd) {
+            background-color: #e6e6e6;
+        }
+    }
+    a{
+        display: block;
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+
+.dark-mode {
+    .menu-section {
+        li {
+            &:nth-child(odd) {
+                background-color: #1a1a1a;
+            }
+        }
+    }
+}
+.item-list{
+    margin-bottom: 5rem;
+}
+.menu-item {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    column-gap: .5rem;
+    row-gap: .25rem;
+    padding: 1.5rem 1rem;
+    grid-template-areas: 
+    "name price"
+    "description description";
+    border-radius: .5rem;
+    &:nth-child(odd) {
+        background-color: #e6e6e6;
+    }
+
+    .item-name {
+        grid-area: name;
+        font-weight: bold;
+    }
+    .item-price {
+        grid-area: price;
+        text-align: right;
+    }
+    .item-description {
+        grid-area: description;
+        font-size: var(--font-size-tiny);
+    }
+}
+.menu-item.no-gap {
+    row-gap: 0;
+}
+
+.dark-mode {
+    .menu-item {
+        &:nth-child(odd) {
+            background-color: #1a1a1a;
+        }
+    }
+}
+
+.location-section {
+    address {
+        margin-bottom: 3rem;
+        font-size: var(--font-size-5);
+        font-style: normal;
+        line-height: 1.75rem;
+    }
+    h6{
+        text-align: center;
+    }
+    p {
+        line-height: 1.5rem;
+    }
+    .google-link {
+        border: 1px solid var(--color-mid);
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+    }
+}
+
+.back-container {
+    text-align: center;
+    margin-bottom: 1rem;
+    a {
+        padding: 1rem 3rem;
+        border: 1px solid var(--color-mid);
+        border-radius: .5rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .page-hero {
+        header {
+            max-width: 545px;
+            margin: 0 auto;
+        }
+    }
+
+    .menu-section {
+        ul {
+            max-width: 545px;
+            margin: 0 auto;
+        }
+    }
+
+    .item-list {
+        max-width: 545px;
+        margin: 0 auto 6rem auto;
+    }
+
+    .shadow-box {
+        max-width: 545px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    
+    .page-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        .hero-container {
+            width: 50%;
+        }
+    }
+
+    .content-section {
+        padding-top: 3rem;
+        max-width: 738px;
+        margin: 0 auto 4rem auto;
+    }
+
+    footer {
+        margin-bottom: .25rem;
+    }
+}
+
+

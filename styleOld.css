@@ -1,0 +1,452 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: #f2f2f2;
+    font-family: "Lora", serif;
+}
+
+h1 {
+    font-size: 1.383em;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1.296em;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+h3 {
+    font-size: 1em;
+    margin: 0;
+    font-weight: normal;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 1em;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/* ============================ */
+/* APP HEADER */
+/* ============================ */
+
+.loading-img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.app-header, .app-header nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: #4d4d4d;
+}
+
+.app-header {
+    top: 0;
+    color: #f2f2f2;
+}
+
+.app-header nav {
+    bottom: 0;
+}
+
+.app-header nav a, .app-header button {
+    font-size: .85em;
+    line-height: 12px;
+    text-transform: capitalize;
+}
+
+.app-header nav a {
+    display: block;
+    padding: 12px 0;
+    min-width: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.app-header nav a img, .app-header nav button img {
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 auto 5px auto;
+}
+
+.info-list, .nav-list {
+    display: flex;
+    align-items: center;
+    min-height: 59px;
+}
+
+.info-list {
+    justify-content: space-between;
+}
+
+.info-list a {
+    padding: 1rem;
+    display: block;
+    text-transform: capitalize;
+}
+
+.info-list img {
+    width: 1rem;
+    margin: 0 2px 1px 0;
+    vertical-align: bottom;
+}
+.nav-list {
+    justify-content: space-evenly;
+}
+
+.contact-cta { display: none; }
+
+
+/* ============================ */
+/* HERO */
+/* ============================ */
+
+.hero {
+    padding: 5rem 1rem 0 1rem;
+    text-align: center;
+}
+
+.hero p {
+    font-style: italic;
+    margin-top: 0;
+    font-size: .9em;
+    margin-bottom: 2rem;
+}
+
+.hero ul {
+    
+    max-width: 235px;
+    margin: 0 auto;
+}
+
+.hero li {
+    margin-bottom: .75rem;
+}
+
+
+
+
+.hero a, .hero button, #main-menu button {
+    text-align: center;
+    padding: .4rem 0;
+    border: 1px solid #999;
+    display: block;
+    
+}
+.hero button, #main-menu button {
+    font-family: inherit;
+    font-size: 1em;
+    width: 100%;
+}
+
+.hero img, #main-menu img {
+    display: inline;
+    width: 1rem;
+    vertical-align: bottom;
+    padding: 0 6px 2px 0;
+}
+
+#main-menu {
+    padding: 3rem 1rem;
+}
+
+#main-menu button { 
+    margin-top: 38px;
+    padding: .5rem 0;
+}
+
+
+#main-menu a {
+    display: block;
+    padding: .55rem 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-section {
+ padding: 3rem 1rem;
+ border-bottom: 1px solid #ccc;
+}
+
+.menu-section .article-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .25rem;
+}
+
+.menu-section .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu-section .section-header h2 {
+    margin-bottom: .5rem;
+}
+.menu-section p {
+    margin: 0;
+    font-size: .85em;
+}
+
+.menu-section article {
+    padding: 1rem;
+    min-height: 42px;
+}
+
+.menu-section article:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+.menu-section ul {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-section li a {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: .85rem;
+}
+
+.menu-section li button {
+    border: none;
+    background: transparent;
+    width: min-content;
+    font-size: .85rem;;
+    text-transform: capitalize;
+}
+
+.menu-section li a img, .menu-section li button img {
+    width: 1rem;
+    margin: .25rem auto;
+    display: block;
+    
+}
+
+.menu-section figure {
+    display: block;
+    min-width: 24px;
+    padding: .25rem;
+    border: 1px solid #808080;
+    border-radius: 2rem;
+    margin: 0 0 .25rem 0;
+}
+
+#app-aside {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .75);
+    width: 100vw;
+    height: 100vh;
+    color: #f2f2f2;
+}
+
+#app-aside[aria-hidden = true] {
+    display: none;
+}
+
+#app-aside button {
+    min-width: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#app-aside .list-container {
+    background-color: #4d4d4d;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+#app-aside li a {
+    display: block;
+    padding: .25rem .25rem .25rem 24px;
+    color: #f2f2f2;
+}
+
+#filter-menu, #inline-menu {
+    padding: 0 2rem 0 .9rem;
+}
+
+#filter-menu li, #inline-menu li {
+    min-width: 175px;
+}
+
+#filter-menu li {
+    padding: .25rem 0;
+}
+
+#filter-menu input {
+    width: 16px;
+    margin: 0 8px 0 0;
+    padding: 0;
+}
+
+.clear-filter {
+    color: #808080;
+}
+
+.clear-filter.color {
+    color: #f2f2f2;
+}
+.close-menu, .close-filter {
+    padding: 1rem .2rem;
+}
+.active {
+    background-color: #333;
+    outline: 1px solid #f2f2f2;
+}
+.option {
+    padding: 0 .45rem;
+    margin-bottom: 4rem
+}
+
+.option button {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: .35rem .25rem;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    border: none;
+}
+
+.option button img, .option button span {
+    margin-right: .5rem;
+    width: 1rem;
+    height: 1rem;
+    padding: .15rem
+}
+
+.option button span {
+    text-align: center;
+    line-height: 15.84px;
+}
+
+
+#contact {
+    padding: 3rem 1rem 5rem 1rem;
+    text-align: center;
+}
+
+
+#contact a, #contact address {
+    font-size: 1.25em;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+@media screen and (min-width: 769px) { 
+
+    #app-aside[aria-hidden="true"] {
+        width: 0;
+    }
+    #app-aside[aria-hidden="false"] {
+        min-width: 225px;
+    }
+    .contact-cta { display: block; }
+
+    .info-list li:last-child {
+        display: none;
+    }
+
+    .app-header nav {
+        position: relative;
+        width: unset;
+    }
+
+    .app-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    .app-header nav a, .app-header nav button {
+        font-size: 1em;
+    }
+    .option { margin-bottom : 0;}
+
+    .app-header .nav-list a img, .app-header .nav-list button img {
+        display: none;
+    }
+
+    .app-header .nav-list a, .app-header .nav-list button {
+        padding: 1rem;
+    }
+
+    .call-cta {
+        display: none;
+    }
+
+    .content-container {
+        flex-grow: 1;
+        padding: 0 10vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: stretch;
+    }
+
+    #app-aside {
+        width: unset;
+        position: relative;
+        background-color: #4d4d4d;
+        height: unset;
+    }
+
+    #app-aside .list-container {
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        height: unset;
+    }
+ }
+
+ @media screen and (min-width: 1300px) {
+    .content-container {
+        
+        padding: 0 25vw;
+    }
+ }
