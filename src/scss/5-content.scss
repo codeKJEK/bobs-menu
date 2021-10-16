@@ -1,6 +1,6 @@
 /*! CONTENT */
 .content-section{
-    margin: 6rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
 }
 
 .hidden-label {display: none;}
@@ -8,10 +8,21 @@
 .section-header {
     margin-bottom: 2rem;
     text-align: center;
+    border-bottom: 1px solid var(--color-light-75);
     h3, h4, h5, h6 {
         padding: 1rem;
-        border-bottom: 1px solid var(--color-light-75);
         text-transform: capitalize;
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: .5rem;
+        font-size: var(--font-size-small);
+    }
+}
+
+.contains-subheading {
+    h3, h4, h5, h6 {
+        padding: 1rem 0 0 0;
     }
 }
 
@@ -91,7 +102,7 @@
     }
 }
 .item-list{
-    margin-bottom: 5rem;
+    padding-bottom: 4rem;
 }
 .menu-item {
     display: grid;
@@ -154,7 +165,6 @@
 
 .back-container {
     text-align: center;
-    margin-bottom: 1rem;
     a {
         padding: 1rem 3rem;
         border: 1px solid var(--color-mid);
@@ -170,6 +180,10 @@
         }
     }
 
+    .content-section{
+        padding: 1rem 1rem 4rem 1rem;
+    }
+
     .menu-section {
         ul {
             max-width: 545px;
@@ -179,7 +193,8 @@
 
     .item-list {
         max-width: 545px;
-        margin: 0 auto 6rem auto;
+        margin: 0 auto;
+        padding-bottom: 6rem;
     }
 
     .shadow-box {
@@ -201,9 +216,8 @@
     }
 
     .content-section {
-        padding-top: 3rem;
         max-width: 738px;
-        margin: 0 auto 4rem auto;
+        margin: 0 auto;
     }
 
     footer {

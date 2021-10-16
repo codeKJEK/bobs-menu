@@ -1,6 +1,6 @@
 /*! HEADER */
 
-.skip {
+.skip-cta {
     display: block;
     padding: 1rem 0;
     position: absolute;
@@ -89,7 +89,7 @@
 }
 
 @media screen and (min-width: 769px) {
-    .skip-links a {
+    .skip-cta {
         &:focus {
             margin-top: 4.25rem;
         }
