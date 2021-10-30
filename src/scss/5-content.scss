@@ -96,7 +96,7 @@
     .menu-section {
         li {
             &:nth-child(odd) {
-                background-color: #1a1a1a;
+                background-color: #262626;
             }
         }
     }
@@ -138,7 +138,7 @@
 .dark-mode {
     .menu-item {
         &:nth-child(odd) {
-            background-color: #1a1a1a;
+            background-color: #262626;
         }
     }
 }

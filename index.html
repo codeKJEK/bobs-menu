@@ -40,7 +40,7 @@
         gtag("config", "G-TY5W90BTE6");
     </script>
 </head>
-<body>
+<body id="app-home">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53RXBNV" height="0" width="0"
             style="display: none; visibility: hidden"></iframe></noscript>
@@ -54,13 +54,14 @@
             </li>
         </ul>
     </nav>
-    <header class="page-header" id="home" aria-labelledby="home-heading" tabindex="-1">
+    <header class="page-header" aria-labelledby="home-heading" tabindex="-1">
         <div class="header-container">
             <h1 id="home-heading">Bob's Family Restaurant</h1>
+            <a href="tel:+7048883898" class="nav-cta phone">(704) 888-3898</a>
             <nav aria-label="Page navigation" class="page-nav" id="page-navigation">
                 <ul role="menu">
                     <li role="none">
-                        <a href="#" class="nav-cta" role="menuitem"><i class="bx bx-home-alt"></i>home</a>
+                        <a href="#app-home" class="nav-cta" role="menuitem"><i class="bx bx-home-alt"></i>home</a>
                     </li>
                     <li role="none" class="desktop-hidden">
                         <a href="tel:7048883898" class="nav-cta" role="menuitem"><i class="bx bx-phone-call"></i>call</a>
@@ -72,7 +73,7 @@
                         <a href="#location" class="nav-cta" role="menuitem"><i class="bx bx-location-plus"></i>location</a>
                     </li>
                     <li role="none">
-                        <button role="menuitem" id="mode-button">
+                        <button role="menuitem" id="mode-button" aria-live="polite">
                             <i class="bx bx-moon" title="dark"></i><span class="mobile-hidden">dark</span>&nbsp;mode
                         </button>
                     </li>

@@ -16,15 +16,21 @@
 
 
 .page-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: var(--page-header-height);
     border-bottom: 1px solid var(--color-light-75);
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        min-height: var(--page-header-height);
+        font-size: .9em;
+    }
     h1 {
         font-size: 1em;
         margin: 0;
-        padding: 1.38rem 0;
+    }
+    .nav-cta.phone {
+        min-height: unset;
     }
     nav {
         position: fixed;
@@ -53,8 +59,11 @@
         min-height: 52px;
         row-gap: .25rem;
         text-transform: capitalize;
-         &:active {
-            border-bottom: 2px solid #000;
+        &:active {
+            animation-name: active-push;
+            animation-duration: 0.3s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
         }
     }
     .bx {
@@ -65,16 +74,28 @@
     }
 }
 
+@keyframes active-push {
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .dark-mode {
     .page-header {
         border-bottom: none;
         nav {
             background-color: var(--color-dark-15);
         }
-        a, button {
-            &:active {
-                border-bottom: 2px solid #fff;
-            }
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .page-header {
+        .header-container {
+            font-size: 1em;
         }
     }
 }
@@ -83,7 +104,7 @@
     .page-header {
         ul {
             justify-content: center;
-            column-gap: 3rem;
+            column-gap: 2rem;
         }
     }
 }
@@ -111,14 +132,34 @@
             background-color: transparent;
             width: unset;
         }
+        .nav-cta.phone {
+            display: none;
+        }
         ul {
             column-gap: 2rem;
             font-size: inherit;
         }
         a, button {
             flex-direction: row;
-            &:hover, &:focus {
-                border-bottom: 2px solid #000
+            position: relative;
+            transform: perspective(1px) translateZ(0);
+            overflow: hidden;
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: gray;
+                height: 4px;
+                transform: translateY(4px);
+                transition-property: transform;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-out;
+            }
+            &:hover:before {
+                transform: translateY(0);
             }
         }
         .bx {
@@ -139,11 +180,6 @@
     .dark-mode {
         .page-header {
             background-color: var(--color-dark-15);
-            a, button {
-                &:hover, &:focus {
-                    border-bottom: 2px solid #fff;
-                }
-            }
             nav {
                 background-color: transparent;
             }
